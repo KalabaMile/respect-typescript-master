@@ -46,9 +46,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="mt-6 text-sm text-primary-300">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto ipsum inventore eligendi mollitia voluptas dolorem voluptatum tenetur laboriosam!
             </p>
           </motion.div>
 
@@ -65,7 +63,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Učlani se
+              PRIDRUŽI SE TIMU
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 hover:text-secondary-400"

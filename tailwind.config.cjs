@@ -14,11 +14,6 @@ module.exports = {
         "secondary-400": "#E8AF30",
         "secondary-500": "#FFB921",
       },
-      backgroundImage: (theme) => ({
-        "gradient-yellowred":
-          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-        "mobile-home": "url('./assets/HomePageGraphic.png')",
-      }),
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },

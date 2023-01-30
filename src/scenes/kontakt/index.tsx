@@ -50,9 +50,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
             VRIJEME JE ZA<span className="" style={{color:"#D2042D"}}> TRENING</span>
           </HText>
           <p className="mt-5 mb-20 text-primary-300">
-            Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-            sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-            adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+          Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Učinite dobro za sebe i osjetite snagu i energiju koja dolazi s redovitim treninzima. Pokrenite put ka zdravijem i sretnijem životu već danas!
           </p>
             <form
               target="_blank"

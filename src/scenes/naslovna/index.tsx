@@ -46,7 +46,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="text-primary-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto ipsum inventore eligendi mollitia voluptas dolorem voluptatum tenetur laboriosam!
+            Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p>
           </motion.div>
 

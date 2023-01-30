@@ -8,14 +8,14 @@ type Props = {
 };
 
 const MaliRespektaši = ({ setSelectedPage }: Props) => {
-  
+
     return (
         <section id="malirespektaši" className="mx-auto w-5/6 pb-10">
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.MaliRespektaši)}
             >
                 <div className="justify-between gap-8 md:flex">
-                <div className="md:p-10 py-10 w-full md:w-4/6">
+                    <div className="md:p-10 py-10 w-full md:w-4/6">
                         <div className="bg-primary-300 rounded-lg shadow-lg">
                             <div
                             >
@@ -35,24 +35,32 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                         </div>
                     </div>
                     <motion.div
-                        className="mt-10 basis-2/6"
+                        className="md:mt-10 mt-0 basis-2/6"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ delay: 0.1, duration: 0.5 }}
                         variants={{
-                          hidden: { opacity: 0, x: 50 },
-                          visible: { opacity: 1, x: 0 },
+                            hidden: { opacity: 0, x: 50 },
+                            visible: { opacity: 1, x: 0 },
                         }}
                     >
                         <HText>
                             MALI RESPEKTAŠI
                         </HText>
-                        <p className="mt-10 text-primary-300">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tenetur fuga sint cum ex, eius accusamus impedit nobis officiis exercitationem animi eos sit beatae numquam quo id, dolorum voluptate nulla doloremque dignissimos odit! Ipsam ducimus dolor, porro a velit blanditiis hic quod molestias officiis fugit minus impedit nemo rerum alias.
+                        <p className="mt-5 md:mt-10 text-primary-300">
+                            Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta.
+                        </p>
+                        <p className="text-primary-300">
+                        Škola sporta mali respektaši kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece.
+                        Družimo se i igramo dva puta sedmično, po 1 h vremena.
+                        </p>
+                        <p className="text-primary-300">
+                        Univerzalna škola sporta  "mali respektaši" poslužit će kao izvrstan temelj  za dalje pohađanje sportskih programa vašeg djeteta.
+                        Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.
                         </p>
                     </motion.div>
-                    
+
                 </div>
             </motion.div>
         </section>

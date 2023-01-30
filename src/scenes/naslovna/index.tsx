@@ -45,7 +45,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <p className="mt-6 text-sm text-primary-300">
+            <p className="text-primary-300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto ipsum inventore eligendi mollitia voluptas dolorem voluptatum tenetur laboriosam!
             </p>
           </motion.div>

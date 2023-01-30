@@ -19,7 +19,6 @@ const Onama = ({ setSelectedPage }: Props) => {
       >
         <header className="relative flex items-center justify-center h-screen overflow-hidden">
           <div className="mx-20 relative z-30 p-5 text-2xl text-white bg-primary-100 bg-opacity-50 rounded-xl">
-            <div>
               {/* TITLE */}
               <div className="relative">
                 <motion.div
@@ -38,7 +37,6 @@ const Onama = ({ setSelectedPage }: Props) => {
                   </HText>
                 </motion.div>
               </div>
-            </div>
           </div>
           <video
             autoPlay

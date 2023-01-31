@@ -74,7 +74,7 @@ const Slider = () => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
       <button onClick={previous} className="pr-2"><HText>{"<"}</HText></button>
-        <div className="bg-primary-300 rounded-lg w-full shadow-lg hover:bg-secondary-400 text-white hover:text-primary-300">
+        <div className="bg-primary-300 rounded-lg w-full shadow-lg hover:bg-secondary-500 text-white hover:text-primary-300">
           <div>
            <video autoPlay
               loop

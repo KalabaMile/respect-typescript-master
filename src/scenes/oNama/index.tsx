@@ -18,7 +18,7 @@ const Onama = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Onama)}
       >
         <header className="relative flex items-center justify-center h-screen overflow-hidden">
-          <div className="mx-20 relative z-30 p-5 text-2xl text-white bg-primary-100 bg-opacity-50 rounded-xl">
+          <div className="mx-20 relative z-30 p-5 text-2xl text-center text-white bg-primary-100 bg-opacity-50 rounded-xl">
               {/* TITLE */}
               <div className="relative">
                 <motion.div
@@ -33,7 +33,7 @@ const Onama = ({ setSelectedPage }: Props) => {
                 >
                   <HText>
                     SPORTSKA AKADEMIJA
-                    <span className="text-secondary-500"> RESPECT </span>SARAJEVO
+                    <span className="text-secondary-500"> RESPECT </span>
                   </HText>
                 </motion.div>
               </div>
@@ -54,7 +54,7 @@ const Onama = ({ setSelectedPage }: Props) => {
         {isAboveMediumScreens ? (<div className="flex items-center justify-center">
           <iframe width="1600" height="700" src="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"></iframe>
         </div>): <div className="flex items-center justify-center">
-          <iframe width="1600" height="500" src="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"></iframe>
+          <iframe width="1600" height="600" src="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"></iframe>
         </div>}
       </motion.div>
     </section>

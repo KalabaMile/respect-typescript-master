@@ -32,8 +32,8 @@ const Onama = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                    SPORTSKA AKADEMIJA{" "}
-                    <span className="text-secondary-500">RESPECT</span>
+                    SPORTSKA AKADEMIJA
+                    <span className="text-secondary-500"> RESPECT </span>SARAJEVO
                   </HText>
                 </motion.div>
               </div>

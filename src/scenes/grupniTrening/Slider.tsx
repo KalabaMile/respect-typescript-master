@@ -13,15 +13,15 @@ const Slider = () => {
       video: alenbodyfat,
     },
     {
-      title: '2. Lift/Burn',
+      title: '2. Lift&Burn',
       name: 'Alen Gluho',
-      description: 'Description 2',
+      description: 'Lift&Burn je program koji će, oblikovati i ojačati vaše cijelo tijelo veoma brzo!Fenomenalno tijelo se ne rađa već se transformiše, koristeći provjerenu Lift&Burn formulu: THE REP EFFECT. Fokus je na malim kilažama sa velikim brojem pokreta. Zahvaljujući tome, sagorjećete kalorije, povećat će te snagu, brzo i lijepo oblikovati mišiće. Zbog velikog broja ponavljanja, koriste se nešto manje težine od onih koje biste inače stavljali u teretani. Razlog tome je da vježbač uz što pravilniju tehniku završi cijeli trening do kraja uspješno.Programom Lift&Burn možete potrošiti i do 600kcal.',
       video: alenbodyfat,
     },
     {
       title: '3. Boks',
       name: 'Asmir Vatreš',
-      description: 'Description 3',
+      description: 'Namijenjen je rekreativcima i početnicima koji žele iskusiti prednosti ovog sporta u ugodnom i prijateljskom okruženju. Naši iskusni treneri će te voditi kroz personalizirane treniranja koja će osnažiti tijelo i um, poboljšati kondiciju i ravnotežu. Boksovanje je učinkovit način za relaksaciju,smanjenje stresa i tjelesne tezine, a s nama ćeš iskusiti sve to uz zabavu i izazov.',
       video: alenbodyfat,
     },
     {
@@ -33,13 +33,13 @@ const Slider = () => {
     {
       title: '5. Crossfit',
       name: 'Asmir Vatreš',
-      description: 'Description 5',
+      description: 'Kruzni trening baziran na snazi i izdržljivosti pruža kvalitetne treniranja u grupi pod vodstvom iskusnog trenera. Naše dinamične sesije uključuju različite vježbe snage i izdržljivosti za učinkovit i zabavan način poboljšanja fizičke kondicije. S nama ćeš osjetiti rezultate već nakon nekoliko tjedana, a s vremenom ćeš vidjeti značajno poboljšanje snage, izdržljivosti i tjelesne forme',
       video: alenbodyfat,
     },
     {
       title: '6. Body Fat Burning',
       name: 'Alen Gluho',
-      description: 'Description 6',
+      description: 'Body Fat Burning je kardio trening inspirisan atletskim sportskim pokretima koji pojačava snagu i izdržljivost.Ovaj visoko intenzivni intervalni trening kombinuje atletske i aerobik pokrete sa pokretima za povećanje snage i stabilnosti.Body Fat Burning sagorijeva veliki broj kalorija(835kcal), zateže i oblikuje figuru, a snagu, izdržljivost i brzinu podiže na viši nivo. Zbog svoje jednostavnosti i lako pamtljivih pokreta, kao i izražene djelotvornosti, ovaj program su prihvatili najrazličitiji tipovi vježbača.',
       video: alenbodyfat,
     },
     {

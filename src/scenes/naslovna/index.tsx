@@ -86,7 +86,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
 
       {/* SPONSORS */}
       {isAboveMediumScreens && (
-        <div className="h-[125px] w-full bg-primary-100 py-3">
+        <div className="h-[125px] w-full bg-gray-50 py-3">
           <div className="mx-auto w-5/6">
             <div className="flex items-center justify-between mt-1 gap-8 h-[95px]">
               <img alt="redbull-sponsor" src={perutnina} />

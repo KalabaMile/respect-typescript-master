@@ -51,11 +51,6 @@ const Onama = ({ setSelectedPage }: Props) => {
             Your browser does not support the video tag.
           </video>
         </header>
-        {isAboveMediumScreens ? (<div className="flex items-center justify-center">
-          <iframe width="1600" height="700" src="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"></iframe>
-        </div>): <div className="flex items-center justify-center">
-          <iframe width="1600" height="600" src="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"></iframe>
-        </div>}
       </motion.div>
     </section>
   );

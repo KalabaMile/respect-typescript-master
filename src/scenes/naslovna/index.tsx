@@ -46,13 +46,13 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="text-primary-300">
-            Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
+              Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p>
           </motion.div>
 
           {/* ACTIONS */}
           <motion.div
-            className="mt-8 flex items-center gap-8"
+            className="mt-8 flex items-center gap-5"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -65,6 +65,10 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               PRIDRUŽI SE TIMU
             </ActionButton>
+            <a target="_blank"
+              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-5 py-2"
+              href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
+            >360° PREGLED</a>
             <AnchorLink
               className="text-sm font-bold text-primary-500 hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.Onama)}
@@ -86,11 +90,11 @@ const Naslovna = ({ setSelectedPage }: Props) => {
 
       {/* SPONSORS */}
       {isAboveMediumScreens && (
-        <div className="h-[125px] w-full bg-gray-50 py-3">
+        <div className="h-[125px] w-full bg-gray-200 py-3">
           <div className="mx-auto w-5/6">
             <div className="flex items-center justify-between mt-1 gap-8 h-[95px]">
               <img alt="redbull-sponsor" src={perutnina} />
-              <img alt="forbes-sponsor" src={jana}/>
+              <img alt="forbes-sponsor" src={jana} />
               <img alt="fortune-sponsor" src={gymbeam} />
               <img alt="forbes-sponsor" src={berlin} />
               <img alt="redbull-sponsor" src={SponsorRedBull} />

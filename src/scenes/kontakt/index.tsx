@@ -46,12 +46,12 @@ const Kontakt = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-             <HText>
-            VRIJEME JE ZA<span className="" style={{color:"#D2042D"}}> TRENING</span>
-          </HText>
-          <p className="mt-5 mb-20 text-primary-300">
-          Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Učinite dobro za sebe i osjetite snagu i energiju koja dolazi s redovitim treninzima. Pokrenite put ka zdravijem i sretnijem životu već danas!
-          </p>
+            <HText>
+              VRIJEME JE ZA<span className="" style={{ color: "#D2042D" }}> TRENING</span>
+            </HText>
+            <p className="mt-5 mb-20 text-primary-300">
+              Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Učinite dobro za sebe i osjetite snagu i energiju koja dolazi s redovitim treninzima. Pokrenite put ka zdravijem i sretnijem životu već danas!
+            </p>
             <form
               target="_blank"
               onSubmit={onSubmit}
@@ -74,7 +74,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
                   maxLength: 100,
                 })}
               />
-               {errors.email && (
+              {errors.email && (
                 <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" &&
                     "Ovo polje je obavezno."}
@@ -108,30 +108,32 @@ const Kontakt = ({ setSelectedPage }: Props) => {
                   maxLength: 2000,
                 })}
               />
-              
+
               <div className="flex items-center justify-center">
-              <button
-                type="submit"
-                className="mt-5 rounded-lg text-primary-300 bg-secondary-500 font-bold px-20 py-3 transition duration-500 hover:text-white hover:bg-primary-300"
-              >
-                POŠALJI
-              </button>
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8 }}
+                  className="mt-5 rounded-lg text-primary-300 bg-secondary-500 font-bold px-20 py-3 hover:text-white hover:bg-primary-300"
+                >
+                  POŠALJI
+                </motion.button>
               </div>
             </form>
           </motion.div>
           {isAboveMediumScreens ? (
-          <motion.div
-            className="relative basis-3/6 md:mt-3"
-          >
-            <div className="w-full px-5 before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-respecttext">
-              <img
-              className="ml-10 max-h-[600px]"
-                src={ContactUsPageGraphic}
-                style={{borderRadius: "20px"}}
-              />
-            </div>
-          </motion.div>
-          ): ""}
+            <motion.div
+              className="relative basis-3/6 md:mt-3"
+            >
+              <div className="w-full px-5 before:absolute before:-bottom-20 before:-right-20 before:z-[-1] md:before:content-respecttext">
+                <img
+                  className="ml-10 max-h-[600px]"
+                  src={ContactUsPageGraphic}
+                  style={{ borderRadius: "20px" }}
+                />
+              </div>
+            </motion.div>
+          ) : ""}
         </div>
       </motion.div>
     </section>

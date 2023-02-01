@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import alenbodyfat from "@/assets/alenbodyfat.mp4"
 import HText from "@/shared/HText";
+import { motion } from "framer-motion";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,7 +10,7 @@ const Slider = () => {
     {
       title: '1. Body Shape',
       name: 'Nejla Salčin',
-      description: 'Description 1',
+      description: 'Body shape je program u kombinacijama sa vjezabama za cijelo tijelo, sa ciljem za poboljšanje zdravlja te cjelokupnog organizma jer su metabolički procesi  neprestano aktivni i tijelo čine izdržljivim, otpornijim i jačim.  Rad na mišićnim grupama više puta nedjeljno održava tijelo aktivnim i spremnijim za nove izazove i napore.  Tijelo je na taj način  u fazi odmora, te samim tim  jednako je važno za mišićni rast i kao i sam trening. Također redovnim treniranjem smanjuje se rizik od povreda, tijelo je zagrijanije,  a rezultati su više nego vidljivi.',
       video: alenbodyfat,
     },
     {
@@ -27,7 +28,7 @@ const Slider = () => {
     {
       title: '4. Tabata',
       name: 'Nejla Salčin',
-      description: 'Description 4',
+      description: 'Tabata ima sve prednosti kardio treninga, visokog intenziteta bez opterećenja na zglobove. Poboljšava ukupnu kondiciju izgradnjom snage i smanjenjem masti.',
       video: alenbodyfat,
     },
     {
@@ -70,34 +71,46 @@ const Slider = () => {
 
 
   return (
-      <div className="py-10  md:w-3/6 flex relative"
+    <div className="py-10  md:w-3/6 flex relative"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
-      <button onClick={previous} className="pr-2"><HText>{"<"}</HText></button>
-        <div className="bg-primary-300 rounded-lg w-full shadow-lg hover:bg-secondary-500 text-white hover:text-primary-300">
-          <div>
-           <video autoPlay
-              loop
-              muted
-              className="rounded-t-lg z-10 w-auto"
-            >
-              <source
-                src={cards[currentIndex].video}
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-           </video>
-          </div>
-          <div className="p-6">
-            <div className="sm:flex sm:justify-between">
-              <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].title}</h2>
-              <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].name}</h2>
-            </div>
-            <p className="my-3">{cards[currentIndex].description}</p>
-          </div>
+      <motion.button
+        onClick={previous}
+        className="pr-2"
+        whileHover={{ scale: 1.4 }}
+        whileTap={{ scale: 0.8 }}>
+        <HText>{"<"}</HText>
+      </motion.button>
+      <div className="bg-primary-300 rounded-lg w-full shadow-lg hover:bg-secondary-500 text-white hover:text-primary-300">
+        <div>
+          <video autoPlay
+            loop
+            muted
+            className="rounded-t-lg z-10 w-auto"
+          >
+            <source
+              src={cards[currentIndex].video}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <button onClick={next} className="pl-2"><HText>{">"}</HText></button>
+        <div className="p-6">
+          <div className="sm:flex sm:justify-between">
+            <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].title}</h2>
+            <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].name}</h2>
+          </div>
+          <p className="my-3">{cards[currentIndex].description}</p>
+        </div>
       </div>
+      <motion.button
+        onClick={next}
+        className="pl-2"
+        whileHover={{ scale: 1.4 }}
+        whileTap={{ scale: 0.8 }}>
+        <HText>{">"}</HText>
+      </motion.button>
+    </div>
   );
 };
 

@@ -16,9 +16,7 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
             >
                 <div className="justify-between gap-8 md:flex">
                     <div className="md:p-10 py-10 w-full md:w-4/6">
-                        <div className="bg-primary-300 rounded-lg shadow-lg">
-                            <div
-                            >
+                        <div className="rounded-lg shadow-lg">
                                 <video autoPlay
                                     loop
                                     muted
@@ -30,8 +28,6 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                                     />
                                     Your browser does not support the video tag.
                                 </video>
-
-                            </div>
                         </div>
                     </div>
                     <motion.div

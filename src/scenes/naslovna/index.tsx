@@ -40,7 +40,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-40 before:z-[-1] md:before:content-respecttext">
+              <div className="before:absolute before:-top-20 before:-mt-3 before:-left-20 before:z-[-1] md:before:content-respecttext">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>

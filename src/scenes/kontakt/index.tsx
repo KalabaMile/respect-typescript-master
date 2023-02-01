@@ -40,7 +40,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -125,7 +125,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
             <motion.div
               className="relative basis-3/6 md:mt-3"
             >
-              <div className="w-full px-5 before:absolute before:-bottom-20 before:-right-20 before:z-[-1] md:before:content-respecttext">
+              <div className="w-full px-5">
                 <img
                   className="ml-10 max-h-[600px]"
                   src={ContactUsPageGraphic}

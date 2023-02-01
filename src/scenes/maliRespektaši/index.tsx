@@ -35,7 +35,7 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 0.1, duration: 0.5 }}
+                        transition={{ delay: 0, duration: 0.3 }}
                         variants={{
                             hidden: { opacity: 0, x: 50 },
                             visible: { opacity: 1, x: 0 },
@@ -48,11 +48,11 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                             Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta.
                         </p>
                         <p className="text-primary-300">
-                        Škola sporta mali respektaši kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece.
+                        Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece.
                         Družimo se i igramo dva puta sedmično, po 1 h vremena.
                         </p>
                         <p className="text-primary-300">
-                        Univerzalna škola sporta  "mali respektaši" poslužit će kao izvrstan temelj  za dalje pohađanje sportskih programa vašeg djeteta.
+                        Univerzalna škola sporta  "Mali respektaši" poslužit će kao izvrstan temelj  za dalje pohađanje sportskih programa vašeg djeteta.
                         Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.
                         </p>
                     </motion.div>

@@ -14,6 +14,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
   px-5 py-3 placeholder-white text-white`;
 
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  
   const {
     register,
     trigger,

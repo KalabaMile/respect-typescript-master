@@ -25,11 +25,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
-            {/* LEFT SIDE */}
-
             <img className="pt-2" alt="logo" src={Logo} />
-
-            {/* RIGHT SIDE */}
             <div className="flex items-center sm:justify-end gap-10">
               {isTopOfPage && isAboveSmallScreens ? (
                 <div className="flex items-center gap-10">
@@ -74,18 +70,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
         </div>
       </div>
-
-      {/* MOBILE MENU MODAL */}
       {isMenuToggled && (
         <div className="fixed right-0 bottom-0 z-40 h-full w-[320px] bg-secondary-400 drop-shadow-xl hover:bg-secondary-500">
-          {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <XMarkIcon className="h-6 w-6 text-primary-300" />
             </button>
           </div>
-
-          {/* MENU ITEMS */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -130,7 +121,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </div>
           </motion.div>
         </div>
-
       )}
     </nav>
   );

@@ -1,8 +1,6 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
-import alenbodyfat from "@/assets/alenbodyfat.mp4"
-import Card from "./Slider";
 import Slider from "./Slider";
 
 type Props = {

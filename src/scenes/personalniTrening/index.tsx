@@ -15,8 +15,6 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.PersonalniTrening)}
       >
-
-        {/* FORM AND IMAGE */}
         <div className="justify-between gap-8 md:flex mt-10">
           <motion.div
             className="md:px-10 mt-10 md:mt-0 basis-3/6"

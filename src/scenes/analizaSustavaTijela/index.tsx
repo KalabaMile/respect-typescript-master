@@ -14,7 +14,7 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                 onViewportEnter={() => setSelectedPage(SelectedPage.AnalizaSustavaTijela)}
             >
                 <div className="md:flex md:justify-between">
-                <motion.div
+                    <motion.div
                         className="mt-10 md:mt-10 md:pl-10 basis-2/6"
                         initial="hidden"
                         whileInView="visible"
@@ -47,11 +47,9 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                                     />
                                     Your browser does not support the video tag.
                                 </video>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </motion.div>
         </section>

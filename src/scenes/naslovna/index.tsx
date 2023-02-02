@@ -20,14 +20,11 @@ const Naslovna = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="naslovna" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
-      {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Naslovna)}
       >
-        {/* MAIN HEADER */}
         <div className="z-10 mt-32 md:basis-3/5">
-          {/* HEADINGS */}
           <motion.div
             className="md:-mt-20"
             initial="hidden"
@@ -39,18 +36,13 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="relative">
-              <div className="before:absolute before:-top-20 before:-mt-3 before:-left-20 before:z-[-1] md:before:content-respecttext">
+              <div className="relative before:absolute before:-top-20 before:-mt-3 before:-left-20 before:z-[-1] md:before:content-respecttext">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
-            </div>
-
             <p className="text-primary-300">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p>
           </motion.div>
-
-          {/* ACTIONS */}
           <motion.div
             className="mt-8 flex items-center gap-5"
             initial="hidden"
@@ -78,8 +70,6 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             </AnchorLink>
           </motion.div>
         </div>
-
-        {/* IMAGE */}
         <div
           className="mt-10 flex basis-3/5 justify-center md:z-10
               md:ml-30 md:mt-16 md:justify-items-end"
@@ -87,8 +77,6 @@ const Naslovna = ({ setSelectedPage }: Props) => {
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>
       </motion.div>
-
-      {/* SPONSORS */}
       {isAboveMediumScreens && (
         <div className="h-[125px] w-full bg-gray-200 py-3">
           <div className="mx-auto w-5/6">

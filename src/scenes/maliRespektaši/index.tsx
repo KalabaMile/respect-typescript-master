@@ -17,17 +17,17 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                 <div className="justify-between gap-8 md:flex">
                     <div className="md:p-10 py-10 w-full md:w-4/6">
                         <div className="rounded-lg shadow-lg">
-                                <video autoPlay
-                                    loop
-                                    muted
-                                    className="rounded-lg z-10 w-auto"
-                                >
-                                    <source
-                                        src={malirespektaši}
-                                        type="video/mp4"
-                                    />
-                                    Your browser does not support the video tag.
-                                </video>
+                            <video autoPlay
+                                loop
+                                muted
+                                className="rounded-lg z-10 w-auto"
+                            >
+                                <source
+                                    src={malirespektaši}
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <motion.div
@@ -48,15 +48,14 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                             Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta.
                         </p>
                         <p className="text-primary-300">
-                        Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece.
-                        Družimo se i igramo dva puta sedmično, po 1 h vremena.
+                            Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece.
+                            Družimo se i igramo dva puta sedmično, po 1 h vremena.
                         </p>
                         <p className="text-primary-300">
-                        Univerzalna škola sporta  "Mali respektaši" poslužit će kao izvrstan temelj  za dalje pohađanje sportskih programa vašeg djeteta.
-                        Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.
+                            Univerzalna škola sporta  "Mali respektaši" poslužit će kao izvrstan temelj  za dalje pohađanje sportskih programa vašeg djeteta.
+                            Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.
                         </p>
                     </motion.div>
-
                 </div>
             </motion.div>
         </section>

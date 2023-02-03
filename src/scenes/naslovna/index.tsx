@@ -36,7 +36,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-              <div className="relative before:absolute before:-top-20 before:-mt-3 before:-left-20 before:z-[-1] md:before:content-respecttext">
+              <div className="relative md:right-10 bottom-10">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             <p className="text-primary-300">

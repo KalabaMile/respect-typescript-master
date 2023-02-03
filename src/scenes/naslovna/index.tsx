@@ -17,6 +17,7 @@ type Props = {
 
 const Naslovna = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  const isAboveSmallScreens = useMediaQuery("(min-width:576px)");
 
   return (
     <section id="naslovna" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
@@ -44,7 +45,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             </p>
           </motion.div>
           <motion.div
-            className="mt-8 flex items-center gap-5"
+            className="mt-8 grid grid-cols-2 sm:flex items-center text-center gap-5"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -58,7 +59,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               PRIDRUŽI SE TIMU
             </ActionButton>
             <a target="_blank"
-              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-5 py-2"
+              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-5 py-2 text-center"
               href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
             >360° PREGLED</a>
             <AnchorLink
@@ -66,7 +67,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               onClick={() => setSelectedPage(SelectedPage.Onama)}
               href={`#${SelectedPage.Onama}`}
             >
-              <p>Saznaj više</p>
+              {isAboveSmallScreens ? <p>Saznaj više</p>: ""}
             </AnchorLink>
           </motion.div>
         </div>

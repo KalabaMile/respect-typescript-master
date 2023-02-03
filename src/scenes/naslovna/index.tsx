@@ -37,9 +37,9 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-              <div className="relative md:right-10 bottom-10">
-                <img alt="home-page-text" src={HomePageText} />
-              </div>
+            <div className="relative md:right-10 bottom-10">
+              <img alt="home-page-text" src={HomePageText} />
+            </div>
             <p className="text-primary-300">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p>
@@ -67,7 +67,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               onClick={() => setSelectedPage(SelectedPage.Onama)}
               href={`#${SelectedPage.Onama}`}
             >
-              {isAboveSmallScreens ? <p>Saznaj više</p>: ""}
+              {isAboveMediumScreens ? <p>Saznaj više</p> : ""}
             </AnchorLink>
           </motion.div>
         </div>
@@ -79,8 +79,19 @@ const Naslovna = ({ setSelectedPage }: Props) => {
         </div>
       </motion.div>
       {isAboveMediumScreens && (
-        <div className="h-[125px] w-full bg-gray-200 py-3">
-          <div className="mx-auto w-5/6">
+        <motion.div
+          className="h-[125px] w-full bg-gray-200 py-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.1, duration: 0.3 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div
+            className="mx-auto w-5/6">
             <div className="flex items-center justify-between mt-1 gap-8 h-[95px]">
               <img alt="redbull-sponsor" src={perutnina} />
               <img alt="forbes-sponsor" src={jana} />
@@ -89,7 +100,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               <img alt="redbull-sponsor" src={SponsorRedBull} />
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </section>
   );

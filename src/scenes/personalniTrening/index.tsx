@@ -31,7 +31,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
             PERSONALNI TRENING
           </HText>
         </motion.div>
-        <div className="justify-between gap-10 md:flex mt-10 md:mt-20">
+        <div className="justify-between gap-10 md:flex mt-10">
           <div
             className="relative basis-3/6 mt-10 md:mt-0"
           >

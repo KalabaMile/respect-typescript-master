@@ -82,7 +82,7 @@ const Slider = () => {
         whileTap={{ scale: 0.8 }}>
         <HText>{"<"}</HText>
       </motion.button>
-      <motion.div
+      <div
         className="bg-primary-300 rounded-lg w-full shadow-lg text-white">
         <div>
           <video autoPlay
@@ -97,7 +97,7 @@ const Slider = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="p-5">
+        <div className="p-3">
           <div className="sm:flex sm:justify-between">
             <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].title}</h2>
             <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].name}</h2>
@@ -105,7 +105,7 @@ const Slider = () => {
           <p className="py-3">{`${cards[currentIndex].description.slice(0,120)}... `}<Modal video={cards[currentIndex].video} text={cards[currentIndex].description}/></p>
           <p className="font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
         </div>
-      </motion.div>
+      </div>
       <motion.button
         onClick={next}
         className="pl-2"

@@ -28,7 +28,7 @@ const GrupniTrening = ({ setSelectedPage }: Props) => {
         >
             <HText>GRUPNI TRENING</HText>
             <p className="pt-5 md:mt-5 md:mr-10 text-primary-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas, eos asperiores accusamus rerum nam voluptatibus maiores repellat ducimus sequi iure vero, officia voluptates praesentium culpa, odit cumque aut porro!
+              Raspored treninga
             </p>
         </motion.div>
         <Slider/>

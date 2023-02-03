@@ -21,7 +21,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
     <nav>
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-40 w-full py-3`}
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-40 w-full py-3 `}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
@@ -71,7 +71,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         </div>
       </div>
       {isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[320px] bg-secondary-400 drop-shadow-xl hover:bg-secondary-500">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[320px] bg-secondary-500 drop-shadow-xl">
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <XMarkIcon className="h-6 w-6 text-primary-300" />

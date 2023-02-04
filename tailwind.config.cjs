@@ -15,11 +15,11 @@ module.exports = {
         "secondary-500": "#FFB921",
       },
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"]
       },
-      content: {
-        respecttext: "url('./assets/RespectText.png')",
-      },
+      backgroundImage: {
+        hero: "url('./src/assets/naslovnaimage.jpg')"
+      }
     },
     screens: {
       xs: "480px",

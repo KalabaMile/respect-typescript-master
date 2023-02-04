@@ -9,7 +9,7 @@ const TextModal = ({ text, video }: Props) => {
   return (
     <>
       <button
-        className="bg-transparent text-secondary-500 hover:text-white"
+        className="bg-transparent text-secondary-500 hover:text-secondary-400"
         type="button"
         onClick={() => setShowModal(true)}
       >

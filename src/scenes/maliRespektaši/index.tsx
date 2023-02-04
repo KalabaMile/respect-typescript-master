@@ -2,6 +2,7 @@ import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import malirespektaši from "@/assets/malirespektaši.mp4"
+import TextModal from "@/shared/TextModal";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -48,12 +49,7 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                             Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta.
                         </p>
                         <p className="text-primary-300">
-                            Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece.
-                            Družimo se i igramo dva puta sedmično, po 1 h vremena.
-                        </p>
-                        <p className="text-primary-300">
-                            Univerzalna škola sporta  "Mali respektaši" poslužit će kao izvrstan temelj  za dalje pohađanje sportskih programa vašeg djeteta.
-                            Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.
+                            Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za... <TextModal video={malirespektaši} text='Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta. Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece. Družimo se i igramo dva puta sedmično, po 1 h vremena.Univerzalna škola sporta "Mali respektaši" poslužit će kao izvrstan temelj za dalje pohađanje sportskih programa vašeg djeteta. Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.'/> 
                         </p>
                     </motion.div>
                 </div>

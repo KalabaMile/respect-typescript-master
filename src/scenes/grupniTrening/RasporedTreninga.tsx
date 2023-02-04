@@ -16,7 +16,7 @@ const RasporedTreninga = () => {
                                             Naziv
                                         </th>
                                         <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-2">
-                                            Trener
+                                            Dan
                                         </th>
                                         <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-2">
                                             Vrijeme
@@ -25,87 +25,87 @@ const RasporedTreninga = () => {
                                 </thead>
                                 <tbody>
                                     <tr className="bg-white border-b">
-                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">1.</td>
                                         <td className="text-sm text-gray-900 font-light py-2 whitespace-nowrap">
                                             Body Shape
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            Nejla Salčin
+                                            Pon Sri Pet
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            @mdo
+                                            18:00-19:00
                                         </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
+                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">2.</td>
                                         <td className="text-sm text-gray-900 font-light py-2 whitespace-nowrap">
                                             Lift&Burn
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            Alen Gluho
+                                            Pon Pet
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            @fat
+                                            19:00-20:00
                                         </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
+                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">3.</td>
                                         <td className="text-sm text-gray-900 font-light py-2 whitespace-nowrap">
                                             Boks
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            Asmir Vatreš
+                                            Sri Pet
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            @fat
+                                            19:15-20:00
                                         </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">4</td>
+                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">4.</td>
                                         <td className="text-sm text-gray-900 font-light py-2 whitespace-nowrap">
                                             Tabata
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            Nejla Salčin
+                                            Uto Čet
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            @fat
+                                            18:00-19:00
                                         </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">5</td>
+                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">5.</td>
                                         <td className="text-sm text-gray-900 font-light py-2 whitespace-nowrap">
                                             Crossfit
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            Asmir Vatreš
+                                            Uto Čet Pet Ned
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            @fat
+                                            19:00-20:00
                                         </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">6</td>
+                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">6.</td>
                                         <td className="text-sm text-gray-900 font-light py-2 whitespace-nowrap">
                                             Body Fat Burning
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            Alen Gluho
+                                            Uto Čet
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            @fat
+                                            20:10-21:10
                                         </td>
                                     </tr>
                                     <tr className="bg-white border-b">
-                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">7</td>
+                                        <td className="px-2 py-2 whitespace-nowrap text-sm font-medium text-gray-900">7.</td>
                                         <td className="text-sm text-gray-900 font-light py-2 whitespace-nowrap">
                                             Core 45
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            Alen Gluho
+                                            Sri
                                         </td>
                                         <td className="text-sm text-gray-900 font-light px-6 py-2 whitespace-nowrap">
-                                            @fat
+                                            19:00-20:00
                                         </td>
                                     </tr>
                                 </tbody>

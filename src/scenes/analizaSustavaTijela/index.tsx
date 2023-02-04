@@ -32,7 +32,7 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                             InBody je vrhunski uređaj za analizu sastava tijela za tržište zdravlja i fitnesa. Izgrađen na ugledu i izvrsnosti, InBody je posvećen da inspiriše ljude i motiviše ih da vode zdraviji život. Za manje od 60 sekundi, InBody pruža tačna i objektivna mjerenja za procjenu tjelesne kompozicije.
                         </p>
                     </motion.div>
-                    <div className="py-10 md:p-10 basis-4/6">
+                    <div className="py-10 md:pl-10 basis-4/6">
                         <div className="rounded-lg md:flex">
                             <div
                             >

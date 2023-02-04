@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import alenbodyfat from "@/assets/alenbodyfat.mp4"
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
-import Modal from "@/shared/TextModal";
+import TextModal from "@/shared/TextModal";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,7 +72,7 @@ const Slider = () => {
 
 
   return (
-    <div className="py-10 md:w-3/6 flex"
+    <div className="py-10 md:pl-10 md:w-3/6 flex"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
       <motion.button
@@ -102,7 +102,7 @@ const Slider = () => {
             <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].title}</h2>
             <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].name}</h2>
           </div>
-          <p className="py-3">{`${cards[currentIndex].description.slice(0,120)}... `}<Modal video={cards[currentIndex].video} text={cards[currentIndex].description}/></p>
+          <p className="py-3">{`${cards[currentIndex].description.slice(0,120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description}/></p>
           <p className="font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
         </div>
       </div>

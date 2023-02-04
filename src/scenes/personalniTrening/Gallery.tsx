@@ -1,6 +1,7 @@
 import ImageModal from "@/shared/ImageModal";
 import gym from "@/assets/gym.jpg";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
+import transformacija1 from "@/assets/transformacija1.png";
 
 const Gallery = () => {
     return (
@@ -28,11 +29,11 @@ const Gallery = () => {
                         />
                     </div>
                     <div className="w-full p-1 md:p-2">
-                        <ImageModal image={HomePageGraphic}
+                        <ImageModal image={transformacija1}
                             parent={
                                 <a role="button">
                                     <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-                                        src={gym}>
+                                        src={transformacija1}>
                                     </img>
                                 </a>}
                         />

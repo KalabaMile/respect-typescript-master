@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import kondicioni from "@/assets/kondicioni.mp4"
 import TextModal from "@/shared/TextModal";
+import Gallery from "./Gallery";
 
 
 type Props = {
@@ -12,7 +13,7 @@ type Props = {
 const PersonalniTrening = ({ setSelectedPage }: Props) => {
 
   return (
-    <section id="personalnitrening" className="mx-auto w-5/6 py-20">
+    <section id="personalnitrening" className="mx-auto w-5/6 pt-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.PersonalniTrening)}
       >
@@ -31,7 +32,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
             PERSONALNI TRENING
           </HText>
         </motion.div>
-        <div className="justify-between gap-10 md:flex mt-10">
+        <div className="justify-between md:px-10 gap-10 md:flex mt-10">
           <div
             className="relative basis-3/6 mt-10 md:mt-0"
           >
@@ -97,6 +98,10 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
             </motion.div>
           </div>
         </div>
+        <div className="flex justify-center pt-10 pb-5">
+        <h2 className="text-2xl text-primary-300">TRANSFORMACIJE</h2>
+        </div>
+        <Gallery/>
       </motion.div>
     </section>
   );

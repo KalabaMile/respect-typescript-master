@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ActionButton from "./ActionButton";
 
 type Props = {
   text: string;
@@ -10,7 +9,7 @@ const TextModal = ({ text, video }: Props) => {
   return (
     <>
       <button
-        className="bg-transparent text-white hover:text-secondary-500"
+        className="bg-transparent text-secondary-500 hover:text-white"
         type="button"
         onClick={() => setShowModal(true)}
       >

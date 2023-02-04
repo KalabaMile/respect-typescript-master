@@ -36,7 +36,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="relative md:right-10 bottom-10">
+            <div className="relative sm:left-20 md:left-5 bottom-5">
               <img alt="home-page-text" src={HomePageText} />
             </div>
             <p className="text-primary-300">
@@ -72,7 +72,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
         </div>
         <div
           className="mt-10 flex basis-3/5 justify-center md:z-10
-              md:ml-30 md:mt-16 md:justify-items-end"
+              md:ml-20 md:mt-16 md:justify-items-end"
         >
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>

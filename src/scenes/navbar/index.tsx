@@ -74,7 +74,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className="fixed right-0 bottom-0 z-40 h-full w-[320px] bg-secondary-500 drop-shadow-xl">
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-primary-300" />
+              <XMarkIcon className="h-7 w-7 text-primary-300" />
             </button>
           </div>
           <motion.div
@@ -87,7 +87,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="ml-[11%] flex flex-col gap-10 text-2xl">
+            <div className="ml-[17%] flex flex-col gap-10 text-2xl">
               <Link
                 page="Naslovna"
                 selectedPage={selectedPage}

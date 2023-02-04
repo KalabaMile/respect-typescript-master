@@ -1,7 +1,6 @@
 const RasporedTreninga = () => {
     return (
         <div>
-            <h1 className="text-primary-500 py-5">Raspored treninga</h1>
             <div className="flex flex-col pr-3">
                 <div className="overflow-x-auto py-3 sm:-mx-6 lg:-mx-8">
                     <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
@@ -114,6 +113,7 @@ const RasporedTreninga = () => {
                     </div>
                 </div>
             </div>
+            <h1 className=" text-sm text-primary-500">*Raspored treninga je podložan izmjenama</h1>
         </div>
     )
 }

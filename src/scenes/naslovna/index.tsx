@@ -36,15 +36,15 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="relative sm:left-20 md:left-5 bottom-5">
+            <div className="flex justify-center md:justify-start md:ml-5 md:pb-10">
               <img alt="home-page-text" src={HomePageText} />
             </div>
-            <p className="text-primary-300">
+            {isAboveMediumScreens ? <p className="ml-10 text-primary-300">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
-            </p>
+            </p>: null}
           </motion.div>
           <motion.div
-            className="mt-8 grid grid-cols-2 sm:flex items-center text-center gap-5"
+            className="md:ml-10 mt-8 flex justify-center md:justify-start items-center text-center gap-5"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -58,9 +58,10 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               PRIDRUŽI SE TIMU
             </ActionButton>
             <a target="_blank"
-              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-5 py-2 text-center"
+              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-5 py-2 text-center w-[140px]"
               href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
-            >360° PREGLED</a>
+            >360° PREGLED
+            </a>
             <AnchorLink
               className="text-sm font-bold text-primary-500 hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.Onama)}

@@ -82,28 +82,28 @@ const Slider = () => {
         whileTap={{ scale: 0.8 }}>
         <HText>{"<"}</HText>
       </motion.button>
-      <div
-        className="bg-primary-300 rounded-lg w-full shadow-lg text-white">
-        <div>
-          <video autoPlay
-            loop
-            muted
-            className="rounded-t-lg z-10 w-auto"
-          >
-            <source
-              src={cards[currentIndex].video}
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+      <div>
+        <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-white bg-primary-500">
+          <h2 className="text-xl">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
         </div>
-        <div className="p-3">
-          <div className="sm:flex sm:justify-between">
-            <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].title}</h2>
-            <h2 className="font-bold mb-2 text-2xl">{cards[currentIndex].name}</h2>
+        <div
+          className="bg-primary-500 rounded-lg w-full shadow-lg text-white">
+          <div>
+
+            <video autoPlay
+              loop
+              muted
+              className="rounded-tr-lg z-10 w-auto"
+            >
+              <source
+                src={cards[currentIndex].video}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <p className="py-3">{`${cards[currentIndex].description.slice(0,120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description}/></p>
-          <p className="font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
+          <p className="p-3">{`${cards[currentIndex].description.slice(0, 120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description} /></p>
+          <p className="pb-2 font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
         </div>
       </div>
       <motion.button

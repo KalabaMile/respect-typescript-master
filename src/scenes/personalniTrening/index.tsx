@@ -36,7 +36,10 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
           <div
             className="relative basis-3/6 mt-10 md:mt-0"
           >
-            <motion.div className="bg-primary-300 rounded-lg w-full shadow-lg text-white"
+            <div className="w-[180px] flex justify-center items-center bg-primary-500 rounded-t-lg text-white">
+                <h2 className="p-2 text-xl">Kondicioni trening</h2>
+              </div>
+            <motion.div className="bg-primary-500 rounded-lg w-full shadow-lg text-white"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -46,10 +49,11 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
+              
               <video autoPlay
                 loop
                 muted
-                className="rounded-t-lg z-10 w-auto"
+                className=" rounded-tr-lg z-10 w-auto"
               >
                 <source
                   src={kondicioni}
@@ -58,7 +62,6 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
                 Your browser does not support the video tag.
               </video>
               <div>
-                <h2 className="font-bold p-3 text-2xl">Kondicioni trening</h2>
                 <p className="p-3">
                   Našom metodom rada dolazi do porasta aerobnih i anaerobnih sposobnosti, razvoja snage mišića sa ili bez povećanja mase mišića, kao i do unapređenja... <TextModal video={kondicioni} text="Našom metodom rada dolazi do porasta aerobnih i anaerobnih sposobnosti, razvoja snage mišića sa ili bez povećanja mase mišića, kao i do unapređenja fleksibilnosti. Drugim riječima, primjenom naše metode rada sportisti dostižu visok nivo bazičnih fizičkih kvaliteta. Prednost naše metode rada ogleda se u tome što se nakon uspostavljanja dovoljnog nivoa bazične fizičke pripremljenosti primenjuju specifična trenažna sredstva koja znatno unapređuju sportski nastup u datom sportu. Tako se intenzitet, trajanje i frekvencija aerobnog ili anaerobnog tipa aktivnosti kreiraju na osnovu nivoa ispoljavanja tih karakteristika tokom takmičenja. Unapređuje se brzina, agilnost, koordinacija, izdržljivost, snaga, fleksibilnost zatim se usljed primjene specifičnih vježbi razvijaju i specifični obrasci kretanja datog sporta, pa čak i zahtjevi za specifične pozicije u timu." />
                 </p>
@@ -68,20 +71,24 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
           <div
             className="relative basis-3/6 mt-10 md:mt-0"
           >
-            <motion.div className="bg-primary-300 rounded-lg w-full shadow-lg text-white"
+            <div className="w-[180px] flex justify-center items-center bg-primary-500 rounded-t-lg text-white">
+                <h2 className="p-2 text-xl">Neki drugi trening</h2>
+              </div>
+            <motion.div className="bg-primary-500 rounded-lg w-full shadow-lg text-white"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: 0, duration: 0.3 }}
               variants={{
-                hidden: { opacity: 0, x: 50 },
+                hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
               }}
             >
+              
               <video autoPlay
                 loop
                 muted
-                className="rounded-t-lg z-10 w-auto"
+                className=" rounded-tr-lg z-10 w-auto"
               >
                 <source
                   src={kondicioni}
@@ -90,7 +97,6 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
                 Your browser does not support the video tag.
               </video>
               <div>
-                <h2 className="font-bold p-3 text-2xl">Neki drugi trening</h2>
                 <p className="p-3">
                   Našom metodom rada dolazi do porasta aerobnih i anaerobnih sposobnosti, razvoja snage mišića sa ili bez povećanja mase mišića, kao i do unapređenja... <TextModal video={kondicioni} text="Našom metodom rada dolazi do porasta aerobnih i anaerobnih sposobnosti, razvoja snage mišića sa ili bez povećanja mase mišića, kao i do unapređenja fleksibilnosti. Drugim riječima, primjenom naše metode rada sportisti dostižu visok nivo bazičnih fizičkih kvaliteta. Prednost naše metode rada ogleda se u tome što se nakon uspostavljanja dovoljnog nivoa bazične fizičke pripremljenosti primenjuju specifična trenažna sredstva koja znatno unapređuju sportski nastup u datom sportu. Tako se intenzitet, trajanje i frekvencija aerobnog ili anaerobnog tipa aktivnosti kreiraju na osnovu nivoa ispoljavanja tih karakteristika tokom takmičenja. Unapređuje se brzina, agilnost, koordinacija, izdržljivost, snaga, fleksibilnost zatim se usljed primjene specifičnih vježbi razvijaju i specifični obrasci kretanja datog sporta, pa čak i zahtjevi za specifične pozicije u timu." />
                 </p>
@@ -99,9 +105,9 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
           </div>
         </div>
         <div className="flex justify-center pt-10 pb-5">
-        <h2 className="text-2xl text-primary-300">TRANSFORMACIJE</h2>
+          <h2 className="text-2xl text-primary-300">TRANSFORMACIJE</h2>
         </div>
-        <Gallery/>
+        <Gallery />
       </motion.div>
     </section>
   );

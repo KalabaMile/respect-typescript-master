@@ -3,10 +3,13 @@ import alenbodyfat from "@/assets/alenbodyfat.mp4"
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import TextModal from "@/shared/TextModal";
+import { useSwipeable } from 'react-swipeable'
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hover, setHover] = useState(false);
+  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   const cards = [
     {
       title: 'Body Shape',
@@ -60,6 +63,15 @@ const Slider = () => {
     setCurrentIndex(currentIndex === cards.length - 1 ? 0 : currentIndex + 1);
   };
 
+  const swipeableHandlers = useSwipeable({
+    onSwipedLeft: () => {
+      setCurrentIndex(currentIndex === cards.length - 1 ? 0 : currentIndex + 1);
+    },
+    onSwipedRight: () => {
+      setCurrentIndex(currentIndex === 0 ? cards.length - 1 : currentIndex - 1);
+    },
+  });
+
   useEffect(() => {
     let timerId: any;
     if (!hover) {
@@ -74,14 +86,17 @@ const Slider = () => {
   return (
     <div className="py-10 md:pl-10 md:w-3/6 flex"
       onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}>
-      <motion.button
-        onClick={previous}
-        className="pr-2"
-        whileHover={{ scale: 1.4 }}
-        whileTap={{ scale: 0.8 }}>
-        <HText>{"<"}</HText>
-      </motion.button>
+      onMouseLeave={() => setHover(false)}
+      {...swipeableHandlers}>
+      {isAboveMediumScreens ?
+        <motion.button
+          onClick={previous}
+          className="pr-2"
+          whileHover={{ scale: 1.4 }}
+          whileTap={{ scale: 0.8 }}>
+          <HText>{"<"}</HText>
+        </motion.button>
+        : null}
       <div>
         <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-white bg-primary-500">
           <h2 className="text-xl">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
@@ -106,13 +121,16 @@ const Slider = () => {
           <p className="pb-2 font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
         </div>
       </div>
-      <motion.button
-        onClick={next}
-        className="pl-2"
-        whileHover={{ scale: 1.4 }}
-        whileTap={{ scale: 0.8 }}>
-        <HText>{">"}</HText>
-      </motion.button>
+      {isAboveMediumScreens ?
+        <motion.button
+          onClick={next}
+          className="pl-2"
+          whileHover={{ scale: 1.4 }}
+          whileTap={{ scale: 0.8 }}>
+          <HText>{">"}</HText>
+        </motion.button>
+        : null
+      }
     </div>
   );
 };

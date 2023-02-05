@@ -50,7 +50,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
             <HText>
               VRIJEME JE ZA<span className="" style={{ color: "#D2042D" }}> TRENING</span>
             </HText>
-            <p className="mt-5 mb-20 text-primary-300">
+            <p className="mt-5 mb-10 text-primary-300">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Učinite dobro za sebe i osjetite snagu i energiju koja dolazi s redovitim treninzima. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p>
             <form

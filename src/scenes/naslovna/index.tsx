@@ -24,7 +24,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Naslovna)}
       >
-        <div className="z-10 mt-32 md:basis-3/5">
+        <div className="z-10 mt-20 md:basis-3/5">
           <motion.div
             className="md:-mt-20"
             initial="hidden"

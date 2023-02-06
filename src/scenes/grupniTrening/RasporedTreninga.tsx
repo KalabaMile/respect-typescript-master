@@ -1,6 +1,6 @@
 const RasporedTreninga = () => {
     return (
-        <div>
+        <div className="mt-5">
             <div className="flex flex-col pr-3">
                 <div className="overflow-x-auto py-3 sm:-mx-6 lg:-mx-8">
                     <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">

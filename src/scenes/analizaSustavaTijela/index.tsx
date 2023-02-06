@@ -32,23 +32,21 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                             InBody je vrhunski uređaj za analizu sastava tijela za tržište zdravlja i fitnesa. Izgrađen na ugledu i izvrsnosti, InBody je posvećen da inspiriše ljude i motiviše ih da vode zdraviji život. Za manje od 60 sekundi, InBody pruža tačna i objektivna mjerenja za procjenu tjelesne kompozicije.
                         </p>
                     </motion.div>
-                    <div className="py-10 md:pl-10 basis-4/6">
+                    <div className="relative group my-10 md:ml-10 basis-4/6">
                         <div className="rounded-lg md:flex">
-                            <div
+                            <div className="absolute -inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+                            <video autoPlay
+                                loop
+                                controls
+                                muted
+                                className="relative rounded-lg z-10 w-auto"
                             >
-                                <video autoPlay
-                                    loop
-                                    controls
-                                    muted
-                                    className="rounded-lg z-10 w-auto"
-                                >
-                                    <source
-                                        src={inbody}
-                                        type="video/mp4"
-                                    />
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
+                                <source
+                                    src={inbody}
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>

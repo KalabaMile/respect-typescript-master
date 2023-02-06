@@ -84,7 +84,7 @@ const Slider = () => {
 
 
   return (
-    <div className="py-10 md:pl-10 md:w-3/6 flex"
+    <div className="py-10 md:pl-10 md:w-3/6 flex relative group "
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       {...swipeableHandlers}>
@@ -102,14 +102,14 @@ const Slider = () => {
           <h2 className="text-xl">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
         </div>
         <div
-          className="bg-primary-500 rounded-lg w-full shadow-lg text-white">
-          <div>
-
+          className="relative bg-primary-500 rounded-lg w-full shadow-lg text-white">
+          
+            <div className="absolute -inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
             <video autoPlay
               loop
               muted
               controls
-              className="rounded-tr-lg z-10 w-auto"
+              className="relative rounded-tr-lg z-10 w-auto"
             >
               <source
                 src={cards[currentIndex].video}
@@ -117,9 +117,9 @@ const Slider = () => {
               />
               Your browser does not support the video tag.
             </video>
-          </div>
-          <p className="p-3">{`${cards[currentIndex].description.slice(0, 120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description} /></p>
-          <p className="pb-2 font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
+          
+          <p className="relative p-3">{`${cards[currentIndex].description.slice(0, 120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description} /></p>
+          <p className="relative pb-2 font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
         </div>
       </div>
       {isAboveMediumScreens ?

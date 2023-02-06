@@ -43,6 +43,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
               <video autoPlay
                 loop
                 muted
+                controls
                 className=" rounded-tr-lg z-10 w-auto"
               >
                 <source
@@ -68,6 +69,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
               <video autoPlay
                 loop
                 muted
+                controls
                 className=" rounded-tr-lg z-10 w-auto"
               >
                 <source

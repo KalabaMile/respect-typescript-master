@@ -38,6 +38,7 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                             >
                                 <video autoPlay
                                     loop
+                                    controls
                                     muted
                                     className="rounded-lg z-10 w-auto"
                                 >

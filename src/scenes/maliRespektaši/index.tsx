@@ -21,6 +21,7 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                             <video autoPlay
                                 loop
                                 muted
+                                controls
                                 className="rounded-lg z-10 w-auto"
                             >
                                 <source

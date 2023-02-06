@@ -36,16 +36,8 @@ const Kontakt = ({ setSelectedPage }: Props) => {
 
         {/* FORM AND IMAGE */}
         <div className="justify-between gap-8 md:flex">
-          <motion.div
+          <div
             className="md:pl-10 mt-3 basis-3/6"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.3 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
           >
             <HText>
               VRIJEME JE ZA<span className="" style={{ color: "#D2042D" }}> TRENING</span>
@@ -121,7 +113,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
                 </motion.button>
               </div>
             </form>
-          </motion.div>
+          </div>
           {isAboveMediumScreens ? (
             <motion.div
               className="relative basis-3/6 md:mt-3"

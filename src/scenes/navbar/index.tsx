@@ -74,7 +74,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className="fixed right-0 bottom-0 z-40 h-full w-[320px] bg-secondary-500 drop-shadow-xl">
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-7 w-7 text-primary-300" />
+              <XMarkIcon className="h-7 w-7 text-primary-300 hover:text-white transition duration-500" />
             </button>
           </div>
           <motion.div

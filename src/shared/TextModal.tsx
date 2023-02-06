@@ -24,6 +24,7 @@ const TextModal = ({ text, video }: Props) => {
                   <video autoPlay
                     loop
                     muted
+                    controls
                     className="z-10 w-auto"
                   >
                     <source

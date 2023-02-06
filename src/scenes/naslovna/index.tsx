@@ -44,7 +44,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             </p>: null}
           </motion.div>
           <motion.div
-            className="md:ml-10 mt-8 flex justify-center md:justify-start items-center text-center gap-5"
+            className="md:ml-10 ml-3 mt-8 flex justify-center md:justify-start items-center text-center gap-5"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -58,7 +58,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               PRIDRUŽI SE TIMU
             </ActionButton>
             <a target="_blank"
-              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-5 py-2 text-center w-[140px]"
+              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-2 py-2 text-center w-[160px]"
               href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
             >360° PREGLED
             </a>

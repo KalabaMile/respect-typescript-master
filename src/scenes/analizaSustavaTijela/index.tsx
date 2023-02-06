@@ -28,7 +28,7 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                         <HText>
                             ANALIZA SUSTAVA TIJELA
                         </HText>
-                        <p className="mt-10 text-primary-300">
+                        <p className="mt-5 md:mt-10 text-primary-300">
                             InBody je vrhunski uređaj za analizu sastava tijela za tržište zdravlja i fitnesa. Izgrađen na ugledu i izvrsnosti, InBody je posvećen da inspiriše ljude i motiviše ih da vode zdraviji život. Za manje od 60 sekundi, InBody pruža tačna i objektivna mjerenja za procjenu tjelesne kompozicije.
                         </p>
                     </motion.div>

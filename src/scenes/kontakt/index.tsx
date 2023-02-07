@@ -40,7 +40,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
           <div
             className="md:pl-10 mt-3 basis-3/6"
           >
-            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
+            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-300">
               VRIJEME JE ZA<span className="" style={{ color: "#D2042D" }}> TRENING</span>
             </HText>
             <p className="mt-5 mb-10 text-primary-300">

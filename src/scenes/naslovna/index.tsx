@@ -39,7 +39,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             <div className="flex justify-center md:justify-start md:ml-5 md:pb-10">
               <img alt="home-page-text" src={HomePageText} />
             </div>
-            {isAboveMediumScreens ? <p className="ml-10 text-primary-300">
+            {isAboveMediumScreens ? <p className="ml-10 text-primary-500">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p>: null}
           </motion.div>
@@ -58,17 +58,10 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               PRIDRUŽI SE TIMU
             </ActionButton>
             <a target="_blank"
-              className="text-white bg-primary-300 hover:bg-secondary-500 rounded-lg px-2 py-2 text-center w-[160px]"
+              className="text-white bg-hero2 bg-cover hover:opacity-50 rounded-lg px-2 py-2 text-center w-[160px]"
               href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
             >360° PREGLED
             </a>
-            <AnchorLink
-              className="text-sm font-bold text-primary-500 hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.Onama)}
-              href={`#${SelectedPage.Onama}`}
-            >
-              {isAboveMediumScreens ? <p>Saznaj više</p> : ""}
-            </AnchorLink>
           </motion.div>
         </div>
         <div

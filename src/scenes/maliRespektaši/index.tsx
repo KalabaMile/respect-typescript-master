@@ -28,7 +28,7 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                                 visible: { opacity: 1, x: 0 },
                             }}
                         >
-                            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
+                            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-300">
                                 MALI RESPEKTAŠI
                             </HText>
                             <p className="mt-5 md:mt-10 text-primary-300">
@@ -40,7 +40,7 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                         </motion.div>
                         <div className="mb-10 md:mt-10 md:mx-10 md:w-4/6 relative group">
                             <div className="rounded-lg shadow-lg">
-                                <div className="absolute -inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+                                <div className="absolute -inset-2 bg-primary-300 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                                 <video autoPlay
                                     loop
                                     muted

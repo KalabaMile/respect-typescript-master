@@ -9,13 +9,14 @@ type Props = {
 
 const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
     return (
-        <section id="analizasustavatijela" className="mx-auto w-5/6 pb-0 md:pb-10">
+        <div className="bg-hero2 bg-cover">
+        <section id="analizasustavatijela" className="mx-auto w-5/6 py-10 md:py-20">
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.AnalizaSustavaTijela)}
             >
                 <div className="md:flex md:justify-between">
                     <motion.div
-                        className="mt-10 md:mt-10 md:pl-10 basis-2/6"
+                        className="md:mt-10 md:pl-10 basis-2/6"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
@@ -25,16 +26,16 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                             visible: { opacity: 1, x: 0 },
                         }}
                     >
-                        <HText>
+                        <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-secondary-500">
                             ANALIZA SUSTAVA TIJELA
                         </HText>
-                        <p className="mt-5 md:mt-10 text-primary-300">
+                        <p className="mt-5 md:mt-10 text-secondary-500">
                             InBody je vrhunski uređaj za analizu sastava tijela za tržište zdravlja i fitnesa. Izgrađen na ugledu i izvrsnosti, InBody je posvećen da inspiriše ljude i motiviše ih da vode zdraviji život. Za manje od 60 sekundi, InBody pruža tačna i objektivna mjerenja za procjenu tjelesne kompozicije.
                         </p>
                     </motion.div>
                     <div className="relative group my-10 md:ml-10 basis-4/6">
                         <div className="rounded-lg md:flex">
-                            <div className="absolute -inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+                            <div className="absolute -inset-2 bg-secondary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                             <video autoPlay
                                 loop
                                 controls
@@ -52,6 +53,7 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                 </div>
             </motion.div>
         </section>
+        </div>
     );
 }
 

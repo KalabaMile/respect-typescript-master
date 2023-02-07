@@ -11,7 +11,8 @@ type Props = {
 const GrupniTrening = ({ setSelectedPage }: Props) => {
 
   return (
-    <section id="grupnitrening" className="mx-auto w-5/6 py-20">
+    <div className="bg-hero2 bg-cover">
+    <section id="grupnitrening" className="mx-auto w-5/6 py-10 md:py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.GrupniTrening)}
       >
@@ -27,13 +28,14 @@ const GrupniTrening = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText>GRUPNI TRENING</HText>
+            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-secondary-500">GRUPNI TRENING</HText>
             <RasporedTreninga />
           </motion.div>
           <Slider />
         </div>
       </motion.div>
     </section >
+    </div>
   );
 };
 

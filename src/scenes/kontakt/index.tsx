@@ -29,7 +29,8 @@ const Kontakt = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="kontakt" className="mx-auto w-5/6 pt-10 pb-20">
+    <div className="bg-hero bg-cover">
+    <section id="kontakt" className="mx-auto w-5/6 py-10 md:py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Kontakt)}
       >
@@ -39,7 +40,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
           <div
             className="md:pl-10 mt-3 basis-3/6"
           >
-            <HText>
+            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
               VRIJEME JE ZA<span className="" style={{ color: "#D2042D" }}> TRENING</span>
             </HText>
             <p className="mt-5 mb-10 text-primary-300">
@@ -102,7 +103,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
                 })}
               />
 
-              <div className="flex items-center justify-center">
+              <div className="pb-10 md:pb-0 flex items-center justify-center">
                 <motion.button
                   type="submit"
                   whileHover={{ scale: 1.1 }}
@@ -130,6 +131,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
         </div>
       </motion.div>
     </section>
+    </div>
   );
 };
 

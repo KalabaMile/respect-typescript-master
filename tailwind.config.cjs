@@ -18,7 +18,8 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"]
       },
       backgroundImage: {
-        hero: "url('./src/assets/naslovnaimage.jpg')"
+        hero: "url('./src/assets/naslovnaimage.jpg')",
+        hero2: "url('./src/assets/bgimage.jpg')"
       }
     },
     screens: {

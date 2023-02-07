@@ -29,7 +29,7 @@ const Onama = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <HText>
+              <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
                 SPORTSKA AKADEMIJA
                 <span className="text-secondary-500"> RESPECT </span>
               </HText>

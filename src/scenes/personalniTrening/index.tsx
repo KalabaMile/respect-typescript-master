@@ -66,7 +66,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
               <h2 className="text-white p-2 text-xl">Neki drugi trening</h2>
             </div>
             <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-white">
-              <div className="absolute -inset-2 bg-hero-2 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+              <div className="absolute -inset-2 bg-hero2 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
               <video autoPlay
                 loop
                 muted

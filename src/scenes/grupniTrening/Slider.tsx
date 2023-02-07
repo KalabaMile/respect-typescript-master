@@ -94,17 +94,16 @@ const Slider = () => {
           className="pr-2"
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.8 }}>
-          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-secondary-500">{"<"}</HText>
+          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">{"<"}</HText>
         </motion.button>
         : null}
       <div>
-        <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-white bg-secondary-500">
+        <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-white bg-hero bg-cover">
           <h2 className="text-xl text-primary-500">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
         </div>
         <div
-          className="relative bg-secondary-500 rounded-lg w-full shadow-lg text-white">
-          
-            <div className="absolute -inset-2 bg-secondary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+          className="relative bg-hero bg-cover rounded-lg w-full shadow-lg text-white">
+            <div className="absolute -inset-2 bg-hero rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
             <video autoPlay
               loop
               muted
@@ -128,7 +127,7 @@ const Slider = () => {
           className="pl-2"
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.8 }}>
-          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-secondary-500">{">"}</HText>
+          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">{">"}</HText>
         </motion.button>
         : null
       }

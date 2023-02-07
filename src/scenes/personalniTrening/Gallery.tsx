@@ -13,7 +13,7 @@ import transformacija9 from "@/assets/transformacija9.png";
 import { motion } from "framer-motion";
 
 const Gallery = () => {
-    const hoverAnimation = "absolute -inset-1 bg-gradient-to-r from-secondary-500 to-primary-300 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"
+    const hoverAnimation = "absolute -inset-1 bg-primary-300 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"
     return (
         <div className="container py-2 mx-auto lg:pt-24 lg:px-32">
             <div className="flex flex-wrap -m-1 md:-m-2">

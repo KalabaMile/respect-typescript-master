@@ -26,16 +26,16 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                             visible: { opacity: 1, x: 0 },
                         }}
                     >
-                        <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-secondary-500">
+                        <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">
                             ANALIZA SUSTAVA TIJELA
                         </HText>
-                        <p className="mt-5 md:mt-10 text-secondary-500">
+                        <p className="mt-5 md:mt-10 text-gray-200">
                             InBody je vrhunski uređaj za analizu sastava tijela za tržište zdravlja i fitnesa. Izgrađen na ugledu i izvrsnosti, InBody je posvećen da inspiriše ljude i motiviše ih da vode zdraviji život. Za manje od 60 sekundi, InBody pruža tačna i objektivna mjerenja za procjenu tjelesne kompozicije.
                         </p>
                     </motion.div>
                     <div className="relative group my-10 md:ml-10 basis-4/6">
                         <div className="rounded-lg md:flex">
-                            <div className="absolute -inset-2 bg-secondary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+                            <div className="absolute -inset-2 bg-gray-200 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                             <video autoPlay
                                 loop
                                 controls

@@ -19,7 +19,7 @@ const TextModal = ({ text, video }: Props) => {
         <>
           <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none backdrop-blur-sm">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              <div className="border-0 md:rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div className="border-0 md:rounded-lg shadow-lg relative flex flex-col w-full bg-hero2 bg-cover outline-none focus:outline-none">
                 <div className="relative flex-auto">
                   <video autoPlay
                     loop
@@ -35,12 +35,12 @@ const TextModal = ({ text, video }: Props) => {
                   </video>
 
                 </div>
-                <div className="relative p-6 flex-auto text-primary-300">
+                <div className="relative p-6 flex-auto text-gray-200">
                   {text}
                 </div>
-                <div className="flex items-center justify-center p-3 border-t border-solid border-blueGray-200 rounded-b">
+                <div className="flex items-center justify-center p-3 border-t border-solid border-gray-200 rounded-b">
                   <button
-                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                    className="text-red-500 w-full background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >

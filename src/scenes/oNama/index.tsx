@@ -31,7 +31,7 @@ const Onama = ({ setSelectedPage }: Props) => {
             >
               <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
                 SPORTSKA AKADEMIJA
-                <span className="text-secondary-500"> RESPECT </span>
+                <span className="text-red-600"> RESPECT </span>
               </HText>
             </motion.div>
           </div>

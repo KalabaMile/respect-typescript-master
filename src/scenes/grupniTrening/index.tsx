@@ -28,7 +28,7 @@ const GrupniTrening = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-secondary-500">GRUPNI TRENING</HText>
+            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">GRUPNI TRENING</HText>
             <RasporedTreninga />
           </motion.div>
           <Slider />

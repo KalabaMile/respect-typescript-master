@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Kontakt = ({ setSelectedPage }: Props) => {
-  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
+  const inputStyles = `mb-5 w-full rounded-lg bg-hero2 bg-cover
   px-5 py-3 placeholder-white text-white`;
 
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -40,10 +40,10 @@ const Kontakt = ({ setSelectedPage }: Props) => {
           <div
             className="md:pl-10 mt-3 basis-3/6"
           >
-            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-300">
-              VRIJEME JE ZA<span className="" style={{ color: "#D2042D" }}> TRENING</span>
+            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
+              VRIJEME JE ZA<span className="text-red-600"> TRENING</span>
             </HText>
-            <p className="mt-5 mb-10 text-primary-300">
+            <p className="mt-5 mb-10 text-primary-500">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Učinite dobro za sebe i osjetite snagu i energiju koja dolazi s redovitim treninzima. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p>
             <form
@@ -108,7 +108,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
                   type="submit"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.8 }}
-                  className="mt-5 rounded-lg text-primary-300 bg-secondary-500 font-bold px-20 py-3 hover:text-white hover:bg-primary-300"
+                  className="mt-5 rounded-lg text-white bg-red-600 font-bold px-20 py-3 hover:text-white hover:bg-primary-500"
                 >
                   POŠALJI
                 </motion.button>

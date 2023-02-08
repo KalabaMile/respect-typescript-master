@@ -6,7 +6,7 @@ import TextModal from "@/shared/TextModal";
 import { useSwipeable } from 'react-swipeable'
 import useMediaQuery from "@/hooks/useMediaQuery";
 
-const Slider = () => {
+const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hover, setHover] = useState(false);
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -99,7 +99,7 @@ const Slider = () => {
         : null}
       <div>
         <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-white bg-hero bg-cover">
-          <h2 className="text-xl text-primary-300">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
+          <h2 className="text-xl text-primary-500">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
         </div>
         <div
           className="relative bg-hero bg-cover rounded-lg w-full shadow-lg text-white">
@@ -117,8 +117,8 @@ const Slider = () => {
               Your browser does not support the video tag.
             </video>
           
-          <p className="relative p-3 text-primary-300">{`${cards[currentIndex].description.slice(0, 120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description} /></p>
-          <p className="relative text-primary-300 pb-2 font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
+          <p className="relative p-3 text-primary-500">{`${cards[currentIndex].description.slice(0, 120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description} /></p>
+          <p className="relative text-primary-500 pb-2 font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
         </div>
       </div>
       {isAboveMediumScreens ?
@@ -135,4 +135,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Carousel;

@@ -28,19 +28,19 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                                 visible: { opacity: 1, x: 0 },
                             }}
                         >
-                            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-300">
+                            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
                                 MALI RESPEKTAŠI
                             </HText>
-                            <p className="mt-5 md:mt-10 text-primary-300">
+                            <p className="mt-5 md:mt-10 text-primary-500">
                                 Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta.
                             </p>
-                            <p className="text-primary-300">
+                            <p className="text-primary-500">
                                 Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za... <TextModal video={malirespektaši} text='Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta. Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece. Družimo se i igramo dva puta sedmično, po 1 h vremena.Univerzalna škola sporta "Mali respektaši" poslužit će kao izvrstan temelj za dalje pohađanje sportskih programa vašeg djeteta. Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.' />
                             </p>
                         </motion.div>
                         <div className="mb-10 md:mt-10 md:mx-10 md:w-4/6 relative group">
                             <div className="rounded-lg shadow-lg">
-                                <div className="absolute -inset-2 bg-primary-300 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+                                <div className="absolute -inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                                 <video autoPlay
                                     loop
                                     muted

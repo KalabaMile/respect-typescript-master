@@ -3,7 +3,7 @@ import Logo from "@/assets/Logo.png";
 const Footer = () => {
   const currentYear  = new Date().getFullYear();
   return (
-    <footer className="bg-primary-300 py-10">
+    <footer className="bg-hero2 bg-cover py-10">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-2 basis-1/4 md:mt-0">
           <img alt="logo" src={Logo} />

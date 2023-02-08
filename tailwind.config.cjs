@@ -11,15 +11,14 @@ module.exports = {
         "primary-100": "#BDBDBD",
         "primary-300": "#162F65",
         "primary-500": "#252525",
-        "secondary-400": "#E8AF30",
-        "secondary-500": "#FFB921",
+        "red-600": "#c2000c",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"]
       },
       backgroundImage: {
         hero: "url('./src/assets/naslovnaimage.jpg')",
-        hero2: "url('./src/assets/bgimage.jpg')"
+        hero2: "url('./src/assets/bgimage.jpg')",
       }
     },
     screens: {

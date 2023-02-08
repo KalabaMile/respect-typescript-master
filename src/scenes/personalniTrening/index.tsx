@@ -29,7 +29,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-300">
+          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
             PERSONALNI TRENING
           </HText>
         </motion.div>
@@ -88,7 +88,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
           </div>
         </div>
         <div className="flex justify-center pt-10 pb-5">
-          <h2 className="text-2xl text-primary-300">TRANSFORMACIJE</h2>
+          <h2 className="text-2xl text-primary-500">TRANSFORMACIJE</h2>
         </div>
         <Gallery />
       </motion.div>

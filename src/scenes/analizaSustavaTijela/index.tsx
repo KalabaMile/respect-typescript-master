@@ -35,7 +35,7 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                     </motion.div>
                     <div className="relative group sm:mb-10 md:mt-10 md:ml-10 basis-4/6">
                         <div className="rounded-lg md:flex">
-                            <div className="absolute -inset-2 bg-gray-200 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+                            <div className="absolute sm:-inset-2 bg-gray-200 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                             <video autoPlay
                                 loop
                                 controls

@@ -15,7 +15,7 @@ type Props = {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const navbarBackground = isTopOfPage ? "" : "bg-hero2 bg-cover drop-shadow-lg";
+  const navbarBackground = isTopOfPage ? "" : "bg-hero2 bg-fit drop-shadow-lg";
   const isAboveSmallScreens = useMediaQuery("(min-width:576px)");
 
   return (

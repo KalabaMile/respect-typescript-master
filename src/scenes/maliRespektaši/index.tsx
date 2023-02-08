@@ -40,7 +40,7 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                         </motion.div>
                         <div className="sm:mb-10 md:mt-10 md:mx-10 md:w-4/6 relative group">
                             <div className="rounded-lg shadow-lg">
-                                <div className="absolute -inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+                                <div className="absolute sm:-inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                                 <video autoPlay
                                     loop
                                     muted

@@ -39,7 +39,7 @@ const Onama = ({ setSelectedPage }: Props) => {
             autoPlay
             loop
             muted
-            className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+            className="absolute z-10 min-w-full min-h-full max-w-none overflow-x-hidden"
           >
             <source
               src={Video}

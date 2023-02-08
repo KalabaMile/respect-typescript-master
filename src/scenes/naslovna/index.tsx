@@ -24,7 +24,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Naslovna)}
       >
-        <div className="z-10 mt-20 md:basis-3/5">
+        <div className="z-10 mt-20 md:basis-3/6">
           <motion.div
             className="md:-mt-20"
             initial="hidden"
@@ -36,7 +36,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="flex justify-center md:justify-start md:ml-5 md:pb-10">
+            <div className="flex justify-center md:justify-start md:ml-5 md:pb-5">
               <img alt="home-page-text" src={HomePageText} />
             </div>
             {isAboveMediumScreens ? <p className="ml-10 text-primary-500">
@@ -65,8 +65,8 @@ const Naslovna = ({ setSelectedPage }: Props) => {
           </motion.div>
         </div>
         <div
-          className="mt-10 flex basis-3/5 justify-center md:z-10
-              md:ml-20 md:mt-16 md:justify-items-end"
+          className="mt-10 flex basis-3/6 justify-center md:z-10
+              md:ml-10 md:mt-16 md:justify-items-end"
         >
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>

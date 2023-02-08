@@ -58,7 +58,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               PRIDRUŽI SE TIMU
             </ActionButton>
             <a target="_blank"
-              className="text-white bg-hero2 bg-cover hover:opacity-50 rounded-lg px-2 py-2 text-center w-[160px]"
+              className="text-white bg-hero2 bg-fit hover:opacity-50 rounded-lg px-4 py-2 text-center"
               href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
             >360° PREGLED
             </a>
@@ -73,7 +73,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
       </motion.div>
       {isAboveMediumScreens && (
         <motion.div
-          className="h-[125px] w-full bg-gray-200 py-3"
+          className="h-[125px] w-full bg-gray-200 bg-opacity-60 py-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

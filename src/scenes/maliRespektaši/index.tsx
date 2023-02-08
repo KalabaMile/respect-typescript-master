@@ -12,13 +12,13 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
 
     return (
         <div className="bg-hero bg-cover">
-            <section id="malirespektaši" className="mx-auto w-5/6 py-10 md:py-20">
+            <section id="malirespektaši" className="mx-auto sm:w-5/6 pt-10 sm:py-20">
                 <motion.div
                     onViewportEnter={() => setSelectedPage(SelectedPage.MaliRespektaši)}
                 >
                     <div className="justify-between gap-8 md:flex">
                         <motion.div
-                            className="md:mt-10 mb-10 basis-2/6"
+                            className="md:mt-10 mb-10 mx-10 sm:mx-0 basis-2/6"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.5 }}
@@ -38,14 +38,14 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                                 Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za... <TextModal video={malirespektaši} text='Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta. Škola sporta "Mali respektaši" kombinira  elemente  različitih sportova kako bi Vaša djeca uživala i razvijala što širu motoričku bazu što je jako bitno za dalji razvoj djece. Družimo se i igramo dva puta sedmično, po 1 h vremena.Univerzalna škola sporta "Mali respektaši" poslužit će kao izvrstan temelj za dalje pohađanje sportskih programa vašeg djeteta. Ovaj program je primjeren svakom djetetu, bez obzira na njegove inicijalne sposobnosti, a prvenstveno je usmjeren njihovom sveopćem razvoju.' />
                             </p>
                         </motion.div>
-                        <div className="mb-10 md:mt-10 md:mx-10 md:w-4/6 relative group">
+                        <div className="sm:mb-10 md:mt-10 md:mx-10 md:w-4/6 relative group">
                             <div className="rounded-lg shadow-lg">
                                 <div className="absolute -inset-2 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                                 <video autoPlay
                                     loop
                                     muted
                                     controls
-                                    className="relative rounded-lg z-10 w-auto"
+                                    className="relative sm:rounded-lg z-10 w-auto"
                                 >
                                     <source
                                         src={malirespektaši}

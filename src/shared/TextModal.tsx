@@ -40,7 +40,7 @@ const TextModal = ({ text, video }: Props) => {
                 </div>
                 <div className="flex items-center justify-center p-3 border-t border-solid border-white rounded-b">
                   <button
-                    className="text-red-500 w-full background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                    className="text-red-600 w-full background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >

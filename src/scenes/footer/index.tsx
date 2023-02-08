@@ -1,4 +1,4 @@
-import Logo from "@/assets/Logo.png";
+import Logo from "@/assets/logo2.png";
 
 const Footer = () => {
   const currentYear  = new Date().getFullYear();
@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-2 basis-1/4 md:mt-0">
           <img alt="logo" src={Logo} />
-          <p className="mb-5 mt-2 text-white">© {currentYear} Sportska Akademija Respect</p>
-          <p className="my-5 text-white">Web by</p>
-          <p className="my-5 text-white">All Rights Reserved</p>
+          <p className="mb-5 mt-2 text-gray-200">© {currentYear} Sportska Akademija Respect</p>
+          <p className="my-5 text-gray-200">Web by</p>
+          <p className="my-5 text-gray-200">All Rights Reserved</p>
         </div>
         <div className="mt-8 basis-1/4 md:mt-0">
-          <h4 className="font-bold text-white">Social</h4>
-          <div className="flex gap-10 my-7 text-white">
+          <h4 className="font-bold text-gray-200">Social</h4>
+          <div className="flex gap-10 my-7 text-gray-200">
             <a href="https://www.facebook.com/AkademijaRespekt/" role="button" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-7 h-7"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
             </a>
@@ -26,16 +26,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 basis-1/4 md:mt-0">
-          <h4 className="font-bold text-white">Radno vrijeme</h4>
-          <p className="my-5 text-white">Pon - Pet: 08:00 - 22:00</p>
-          <p className="my-5 text-white">Sub: 09:00 - 22:00</p>
-          <p className="text-white">Ned: 10:00 - 21:00</p>
+          <h4 className="font-bold text-gray-200">Radno vrijeme</h4>
+          <p className="my-5 text-gray-200">Pon - Pet: 08:00 - 22:00</p>
+          <p className="my-5 text-gray-200">Sub: 09:00 - 22:00</p>
+          <p className="text-gray-200">Ned: 10:00 - 21:00</p>
         </div>
         <div className="mt-8 basis-1/4 md:mt-0">
-          <h4 className="font-bold text-white">Kontakt</h4>
-          <p className="my-5 text-white">akademijarespect@hotmail.com</p>
-          <p className="my-5 text-white">+387 61 923-504</p>
-          <p className="text-white">Olimpijska Dvorana "Juan Antonio Samaranch", 71000 Sarajevo</p>
+          <h4 className="font-bold text-gray-200">Kontakt</h4>
+          <p className="my-5 text-gray-200">akademijarespect@hotmail.com</p>
+          <p className="my-5 text-gray-200">+387 61 923-504</p>
+          <p className="text-gray-200">Olimpijska Dvorana "Juan Antonio Samaranch", 71000 Sarajevo</p>
         </div>
       </div>
     </footer>

@@ -58,7 +58,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               PRIDRUŽI SE TIMU
             </ActionButton>
             <a target="_blank"
-              className="text-white bg-hero2 bg-fit hover:opacity-50 rounded-lg px-4 py-2 text-center"
+              className="text-gray-200 bg-hero2 bg-fit hover:opacity-50 rounded-lg px-4 py-2 text-center"
               href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
             >360° PREGLED
             </a>

@@ -11,7 +11,7 @@ type Props = {
 
 const Kontakt = ({ setSelectedPage }: Props) => {
   const inputStyles = `mb-5 w-full rounded-lg bg-hero2 bg-cover
-  px-5 py-3 placeholder-white text-white`;
+  px-5 py-3 placeholder-white text-gray-200`;
 
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   
@@ -111,7 +111,7 @@ const Kontakt = ({ setSelectedPage }: Props) => {
                   type="submit"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.8 }}
-                  className="mt-5 rounded-lg text-white bg-red-600 font-bold px-20 py-3 hover:text-white hover:bg-primary-500"
+                  className="mt-5 rounded-lg text-white bg-red-600 font-bold px-20 py-3 hover:text-gray-200 hover:bg-primary-500"
                 >
                   POŠALJI
                 </motion.button>

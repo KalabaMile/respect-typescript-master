@@ -18,7 +18,7 @@ const Onama = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Onama)}
       >
         <header className="relative flex items-center justify-center h-screen overflow-hidden">
-          <div className="mx-20 relative z-30 p-5 text-2xl text-center text-white bg-primary-100 bg-opacity-50 rounded-xl">
+          <div className="mx-20 relative z-30 p-5 text-2xl text-center bg-primary-100 bg-opacity-50 rounded-xl">
             <motion.div
               initial="hidden"
               whileInView="visible"

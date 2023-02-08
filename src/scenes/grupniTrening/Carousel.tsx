@@ -98,11 +98,11 @@ const Carousel = () => {
         </motion.button>
         : null}
       <div>
-        <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-white bg-hero bg-cover">
+        <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-gray-200 bg-hero bg-cover">
           <h2 className="text-xl text-primary-500">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
         </div>
         <div
-          className="relative bg-hero bg-cover rounded-lg w-full shadow-lg text-white">
+          className="relative bg-hero bg-cover rounded-lg w-full shadow-lg text-gray-200">
             <div className="absolute -inset-2 bg-hero rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
             <video autoPlay
               loop

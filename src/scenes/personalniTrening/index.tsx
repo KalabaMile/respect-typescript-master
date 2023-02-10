@@ -45,7 +45,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
                 loop
                 muted
                 controls
-                className="relative xs:rounded-tr-lg z-10 w-auto"
+                className="relative xs:rounded-tr-lg z-10 w-full"
               >
                 <source
                   src={kondicioni}
@@ -70,7 +70,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
                 loop
                 muted
                 controls
-                className="relative xs:rounded-tr-lg z-10 w-auto"
+                className="relative xs:rounded-tr-lg z-10 w-full"
               >
                 <source
                   src={kondicioni}

@@ -25,16 +25,8 @@ const Naslovna = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Naslovna)}
       >
         <div className="z-10 mt-20 md:basis-3/6">
-          <motion.div
+          <div
             className="md:-mt-20"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.3 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
           >
             <div className="flex justify-center md:justify-start md:ml-5 md:pb-5">
               <img alt="home-page-text" src={HomePageText} />
@@ -42,17 +34,9 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             {isAboveMediumScreens ? <p className="ml-10 text-primary-500">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
             </p> : null}
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className="md:ml-10 mt-8 flex justify-center md:justify-start items-center text-center gap-0 sm:gap-4"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.1, duration: 0.3 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
               UČLANI SE
@@ -71,7 +55,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
               href="https://myalbum.com/album/uUc8e84PCHHeYe/?invite=23f22415-5a06-4acf-8076-d4809c3838cd"
             >GALERIJA
             </a>
-          </motion.div>
+          </div>
         </div>
         <div
           className="mt-10 flex basis-3/6 justify-center md:z-10

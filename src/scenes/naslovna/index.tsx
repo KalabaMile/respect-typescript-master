@@ -30,7 +30,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -48,7 +48,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -57,14 +57,14 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               UČLANI SE
             </ActionButton>
-            { isAboveUltraSmallScreens ?
-            <a target="_blank"
-              rel="noopener"
-              className="text-white bg-primary-500 hover:opacity-50 sm:rounded-lg px-2 xs:px-4 py-2 text-center"
-              href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
-            >360° PREGLED
-            </a>
-            : null}
+            {isAboveUltraSmallScreens ?
+              <a target="_blank"
+                rel="noopener"
+                className="text-white bg-primary-500 hover:opacity-50 sm:rounded-lg px-2 xs:px-4 py-2 text-center"
+                href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
+              >360° PREGLED
+              </a>
+              : null}
             <a target="_blank"
               rel="noopener"
               className="text-white bg-primary-500 hover:opacity-50 rounded-r-lg sm:rounded-lg border-l border-gray-200 sm:border-none px-2 xs:px-4 py-2 text-center"
@@ -86,7 +86,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.1, duration: 0.3 }}
+          transition={{ duration: 0.3 }}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },

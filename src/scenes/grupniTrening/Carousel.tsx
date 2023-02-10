@@ -111,7 +111,7 @@ const Carousel = () => {
         <div
           className="relative bg-hero bg-cover rounded-lg w-full shadow-lg text-gray-200">
           <div className="absolute -inset-2 bg-hero rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
-          <img className="relative rounded-tr-lg z-10 w-full" src={cards[currentIndex].image}/>
+          <img className="relative rounded-tr-lg z-10 w-full" loading="lazy" src={cards[currentIndex].image}/>
           <p className="relative p-3 text-primary-500">{`${cards[currentIndex].description.slice(0, 120)}... `}<TextModal video={cards[currentIndex].video} text={cards[currentIndex].description} /></p>
           <p className="relative text-primary-500 pb-2 font-bold text-sm text-center">{`${currentIndex + 1} od ${cards.length}`}</p>
         </div>

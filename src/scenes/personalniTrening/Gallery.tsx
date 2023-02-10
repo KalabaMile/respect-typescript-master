@@ -26,7 +26,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija4}>
                                         </img>
                                     </a>
@@ -41,7 +41,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija3}>
                                         </img>
                                     </a>
@@ -56,7 +56,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija1}>
                                         </img>
                                     </a>
@@ -73,7 +73,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija2}>
                                         </img>
                                     </a>
@@ -88,7 +88,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija5}>
                                         </img>
                                     </a>
@@ -103,7 +103,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija6}>
                                         </img>
                                     </a>
@@ -122,7 +122,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija7}>
                                         </img>
                                     </a>
@@ -137,7 +137,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija8}>
                                         </img>
                                     </a>
@@ -152,7 +152,7 @@ const Gallery = () => {
                                 >
                                     <div className={hoverAnimation}></div>
                                     <a role="button">
-                                        <img alt="gallery" className="relative block object-cover object-center w-full h-full rounded-lg"
+                                        <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija9}>
                                         </img>
                                     </a>

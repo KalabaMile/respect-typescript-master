@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sportska Akademija Respect</title>
     <style>
+      body {
+        background-color: black;
+      }
       .svgLoader {
         animation: spin 0.5s linear infinite;
         margin: auto;
@@ -27,7 +30,7 @@
   <body>
     <div id="root"><div class="divLoader">
       <svg class="svgLoader" viewBox="0 0 100 100" width="5em" height="5em">
-        <path ng-attr-d="{{config.pathCmd}}" ng-attr-fill="{{config.color}}" stroke="none" d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="#000000" transform="rotate(179.719 50 51)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 51;360 50 51" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform></path>
+        <path ng-attr-d="{{config.pathCmd}}" ng-attr-fill="{{config.color}}" stroke="none" d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="#c2000c" transform="rotate(179.719 50 51)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 51;360 50 51" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform></path>
       </svg>
     </div></div>
     <script type="module" src="/src/main.tsx"></script>

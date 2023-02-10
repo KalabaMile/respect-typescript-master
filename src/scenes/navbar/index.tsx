@@ -81,7 +81,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         </div>
       </div>
       {isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[320px] bg-hero bg-cover drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-full sm:w-[320px] bg-hero bg-cover drop-shadow-xl">
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <XMarkIcon className="h-7 w-7 text-primary-500 hover:text-red-600 transition duration-500" />
@@ -97,37 +97,49 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <div className="ml-[17%] flex flex-col gap-10 text-2xl">
+            <div className="sm:ml-[17%] flex flex-col items-center py-10 sm:py-0 sm:items-start gap-10 text-2xl">
+              <a onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <Link
                 page="Naslovna"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
+              </a>
+              <a onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <Link
                 page="Personalni trening"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
+              </a>
+              <a onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <Link
                 page="Grupni trening"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
+              </a>
+              <a onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <Link
                 page="Mali respektaši"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
+              </a>
+              <a onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <Link
                 page="Analiza sustava tijela"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
+              </a>
+              <a onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <Link
                 page="Kontakt"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
+              </a>
             </div>
           </motion.div>
         </div>

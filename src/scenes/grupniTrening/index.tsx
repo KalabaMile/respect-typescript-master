@@ -1,6 +1,5 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import HText from "@/shared/HText";
 import Slider from "./Carousel";
 import RasporedTreninga from "./RasporedTreninga";
 
@@ -28,7 +27,7 @@ const GrupniTrening = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">GRUPNI TRENING</HText>
+            <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">GRUPNI TRENING</h1>
             <RasporedTreninga />
           </motion.div>
           <Slider />

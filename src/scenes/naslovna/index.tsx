@@ -8,7 +8,6 @@ import perutnina from "@/assets/perutnina3.png"
 import gymbeam from "@/assets/GymBeam3.png"
 import jana from "@/assets/jana3.png"
 import berlin from "@/assets/berlin3.png"
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
 type Props = {
@@ -17,6 +16,7 @@ type Props = {
 
 const Naslovna = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  const isAboveUltraSmallScreens = useMediaQuery("(min-width:300px)");
 
   return (
     <section id="naslovna" className="gap-16 bg-hero bg-cover py-10 md:h-full md:pb-0">
@@ -41,10 +41,10 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             </div>
             {isAboveMediumScreens ? <p className="ml-10 text-primary-500">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Pokrenite put ka zdravijem i sretnijem životu već danas!
-            </p>: null}
+            </p> : null}
           </motion.div>
           <motion.div
-            className="md:ml-10 ml-3 mt-8 flex justify-center md:justify-start items-center text-center gap-5"
+            className="md:ml-10 mt-8 flex justify-center md:justify-start items-center text-center gap-0 sm:gap-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -55,12 +55,21 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              PRIDRUŽI SE TIMU
+              UČLANI SE
             </ActionButton>
+            { isAboveUltraSmallScreens ?
             <a target="_blank"
-              className="text-white bg-primary-500 hover:opacity-50 rounded-lg px-4 py-2 text-center"
+              rel="noopener"
+              className="text-white bg-primary-500 hover:opacity-50 sm:rounded-lg px-2 xs:px-4 py-2 text-center"
               href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
             >360° PREGLED
+            </a>
+            : null}
+            <a target="_blank"
+              rel="noopener"
+              className="text-white bg-primary-500 hover:opacity-50 rounded-r-lg sm:rounded-lg border-l border-gray-200 sm:border-none px-2 xs:px-4 py-2 text-center"
+              href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
+            >GALERIJA
             </a>
           </motion.div>
         </div>

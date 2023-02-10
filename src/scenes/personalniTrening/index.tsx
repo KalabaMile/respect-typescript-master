@@ -1,6 +1,5 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import HText from "@/shared/HText";
 import kondicioni from "@/assets/kondicioni.mp4"
 import TextModal from "@/shared/TextModal";
 import Gallery from "./Gallery";
@@ -29,15 +28,15 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
+          <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
             PERSONALNI TRENING
-          </HText>
+          </h1>
         </motion.div>
         <div className="justify-between md:px-10 gap-10 md:flex mt-10">
           <div
             className="basis-3/6 mt-10 md:mt-0 relative group"
           >
-            <div className="w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg text-gray-200">
+            <div className="w-full xs:w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg text-gray-200">
               <h2 className="p-2 text-xl">Kondicioni trening</h2>
             </div>
             <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-gray-200">
@@ -46,7 +45,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
                 loop
                 muted
                 controls
-                className="relative rounded-tr-lg z-10 w-auto"
+                className="relative xs:rounded-tr-lg z-10 w-auto"
               >
                 <source
                   src={kondicioni}
@@ -62,7 +61,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
           <div
             className="basis-3/6 mt-10 md:mt-0 relative group"
           >
-            <div className="w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg text-gray-200">
+            <div className=" w-full xs:w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg  text-gray-200">
               <h2 className="p-2 text-xl">Neki drugi trening</h2>
             </div>
             <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-gray-200">
@@ -71,7 +70,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
                 loop
                 muted
                 controls
-                className="relative rounded-tr-lg z-10 w-auto"
+                className="relative xs:rounded-tr-lg z-10 w-auto"
               >
                 <source
                   src={kondicioni}

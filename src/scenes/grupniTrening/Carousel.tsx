@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import alenbodyfat from "@/assets/alenbodyfat.mp4"
 import boks from "@/assets/boks.mp4";
-import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import TextModal from "@/shared/TextModal";
 import { useSwipeable } from 'react-swipeable'
@@ -102,11 +101,11 @@ const Carousel = () => {
           className="pr-2"
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.8 }}>
-          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">{"<"}</HText>
+          <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">{"<"}</h1>
         </motion.button>
         : null}
       <div>
-        <div className="p-2 flex justify-center items-center rounded-t-lg w-[250px] text-gray-200 bg-hero bg-cover">
+        <div className="p-2 flex justify-center items-center rounded-t-lg w-full xs:w-[250px] text-gray-200 bg-hero bg-cover">
           <h2 className="text-xl text-primary-500">{cards[currentIndex].title} - {cards[currentIndex].name}</h2>
         </div>
         <div
@@ -123,7 +122,7 @@ const Carousel = () => {
           className="pl-2"
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.8 }}>
-          <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">{">"}</HText>
+          <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">{">"}</h1>
         </motion.button>
         : null
       }

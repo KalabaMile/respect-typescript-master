@@ -2,7 +2,6 @@ import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
-import HText from "@/shared/HText";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
 type Props = {
@@ -40,9 +39,9 @@ const Kontakt = ({ setSelectedPage }: Props) => {
           <div
             className="md:pl-10 mt-3 basis-3/6"
           >
-            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500 mb-10 md:mb-0">
+            <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-primary-500 mb-10 md:mb-0">
               VRIJEME JE ZA<span className="text-red-600"> TRENING</span>
-            </HText>
+            </h1>
             {isAboveMediumScreens ? 
             <p className="mt-5 mb-10 text-primary-500">
               Započnite s treninzima kako biste ojačali tijelo i duh, podigli samopouzdanje i stvorili zdravije navike. Učinite dobro za sebe i osjetite snagu i energiju koja dolazi s redovitim treninzima. Pokrenite put ka zdravijem i sretnijem životu već danas!

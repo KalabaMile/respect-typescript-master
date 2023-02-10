@@ -1,6 +1,5 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import HText from "@/shared/HText";
 import malirespektaši from "@/assets/malirespektaši.mp4"
 import TextModal from "@/shared/TextModal";
 
@@ -28,9 +27,9 @@ const MaliRespektaši = ({ setSelectedPage }: Props) => {
                                 visible: { opacity: 1, x: 0 },
                             }}
                         >
-                            <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
+                            <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
                                 MALI RESPEKTAŠI
-                            </HText>
+                            </h1>
                             <p className="mt-5 md:mt-10 text-primary-500">
                                 Univerzalna škola sporta "Mali respektaši" je program namjenjen za prirodno i zdravo razvijanje psiho-fizičkog razvoja djece od najranijeg uzrasta.
                             </p>

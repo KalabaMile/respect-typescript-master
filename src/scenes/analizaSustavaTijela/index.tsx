@@ -1,7 +1,6 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import inbody from "@/assets/inbody.mp4"
-import HText from "@/shared/HText";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -26,9 +25,9 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                             visible: { opacity: 1, x: 0 },
                         }}
                     >
-                        <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">
+                        <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">
                             ANALIZA SUSTAVA TIJELA
-                        </HText>
+                        </h1>
                         <p className="mt-5 md:mt-10 text-gray-200">
                             InBody je vrhunski uređaj za analizu sastava tijela za tržište zdravlja i fitnesa. Izgrađen na ugledu i izvrsnosti, InBody je posvećen da inspiriše ljude i motiviše ih da vode zdraviji život. Za manje od 60 sekundi, InBody pruža tačna i objektivna mjerenja za procjenu tjelesne kompozicije.
                         </p>

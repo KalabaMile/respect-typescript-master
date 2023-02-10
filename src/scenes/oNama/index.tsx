@@ -1,5 +1,4 @@
 import Video from "@/assets/video.mp4"
-import HText from "@/shared/HText";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -29,10 +28,10 @@ const Onama = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <HText classname="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
+              <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-primary-500">
                 SPORTSKA AKADEMIJA
                 <span className="text-red-600"> RESPECT </span>
-              </HText>
+              </h1>
             </motion.div>
           </div>
           <video

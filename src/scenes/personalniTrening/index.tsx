@@ -36,10 +36,10 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
           <div
             className="basis-3/6 mt-10 md:mt-0 relative group"
           >
-            <div className="w-full xs:w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg text-gray-200">
+            <div className="w-full xs:w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg text-white">
               <h2 className="p-2 text-xl">Kondicioni trening</h2>
             </div>
-            <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-gray-200">
+            <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-white">
               <div className="absolute -inset-2 bg-hero2 bg-cover rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
               <video autoPlay
                 loop
@@ -61,10 +61,10 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
           <div
             className="basis-3/6 mt-10 md:mt-0 relative group"
           >
-            <div className=" w-full xs:w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg  text-gray-200">
-              <h2 className="p-2 text-xl">Neki drugi trening</h2>
+            <div className=" w-full xs:w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg text-white">
+              <h2 className="p-2 text-xl">Trening 1:1</h2>
             </div>
-            <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-gray-200">
+            <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-white">
               <div className="absolute -inset-2 bg-hero2 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
               <video autoPlay
                 loop

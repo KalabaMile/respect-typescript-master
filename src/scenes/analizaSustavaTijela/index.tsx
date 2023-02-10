@@ -9,13 +9,13 @@ type Props = {
 const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
     return (
         <div className="bg-hero2 bg-cover">
-        <section id="analizasustavatijela" className="mx-auto sm:w-5/6 pt-10 sm:py-20">
+        <section id="analizasustavatijela" className="mx-auto sm:w-5/6 pt-10 sm:py-10 md:py-20">
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.AnalizaSustavaTijela)}
             >
                 <div className="md:flex md:justify-between">
                     <motion.div
-                        className="md:mt-10 mb-10 mx-10 sm:mx-0 basis-2/6"
+                        className="md:flex flex-col justify-center mb-10 md:mb-0 mx-10 sm:mx-0 basis-2/6"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
@@ -25,15 +25,13 @@ const AnalizaSustavaTijela = ({ setSelectedPage }: Props) => {
                             visible: { opacity: 1, x: 0 },
                         }}
                     >
-                        <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-gray-200">
-                            ANALIZA SUSTAVA TIJELA
-                        </h1>
+                        <h1 className="font-montserrat text-3xl font-bold text-gray-200">ANALIZA SUSTAVA TIJELA</h1>
                         <p className="mt-5 md:mt-10 text-gray-200">
                             InBody je vrhunski uređaj za analizu sastava tijela za tržište zdravlja i fitnesa. Izgrađen na ugledu i izvrsnosti, InBody je posvećen da inspiriše ljude i motiviše ih da vode zdraviji život. Za manje od 60 sekundi, InBody pruža tačna i objektivna mjerenja za procjenu tjelesne kompozicije.
                         </p>
                     </motion.div>
-                    <div className="relative group sm:mb-10 md:mt-10 md:ml-10 basis-4/6">
-                        <div className="rounded-lg md:flex">
+                    <div className="relative group md:ml-10 basis-4/6">
+                        <div className="rounded-lg">
                             <div className="absolute sm:-inset-2 bg-gray-200 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
                             <video autoPlay
                                 loop

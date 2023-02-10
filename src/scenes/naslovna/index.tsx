@@ -68,7 +68,7 @@ const Naslovna = ({ setSelectedPage }: Props) => {
             <a target="_blank"
               rel="noopener"
               className="text-white bg-primary-500 hover:opacity-50 rounded-r-lg sm:rounded-lg border-l border-gray-200 sm:border-none px-2 xs:px-4 py-2 text-center"
-              href="https://view.ricoh360.com/f7cb7705-2476-4467-88a0-d3fefae23c89/c80000c8-6ae6-459d-8976-05cd2ba9e688?type=compact"
+              href="https://myalbum.com/album/uUc8e84PCHHeYe/?invite=23f22415-5a06-4acf-8076-d4809c3838cd"
             >GALERIJA
             </a>
           </motion.div>

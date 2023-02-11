@@ -1,6 +1,4 @@
 import ImageModal from "@/shared/ImageModal";
-import gym from "@/assets/gym.jpg";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import transformacija1 from "@/assets/transformacija1.png";
 import transformacija2 from "@/assets/transformacija2.jpg";
 import transformacija3 from "@/assets/transformacija3.png";
@@ -13,9 +11,9 @@ import transformacija9 from "@/assets/transformacija9.png";
 import { motion } from "framer-motion";
 
 const Gallery = () => {
-    const hoverAnimation = "absolute -inset-1 bg-primary-500 rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"
+    
     return (
-        <div className="container py-2 mx-auto lg:pt-24 lg:px-32">
+        <div className="container p-2 mx-auto lg:pt-24 lg:px-32">
             <div className="flex flex-wrap -m-1 md:-m-2">
                 <div className="flex flex-wrap w-1/2">
                     <div className="w-1/2 p-1 md:p-2 relative group">
@@ -24,7 +22,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija4}>
@@ -39,7 +36,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija3}>
@@ -54,7 +50,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija1}>
@@ -71,7 +66,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija2}>
@@ -86,7 +80,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija5}>
@@ -101,7 +94,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija6}>
@@ -120,7 +112,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija7}>
@@ -135,7 +126,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija8}>
@@ -150,7 +140,6 @@ const Gallery = () => {
                                 <motion.div
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <div className={hoverAnimation}></div>
                                     <a role="button">
                                         <img alt="gallery" loading="lazy" className="relative block object-cover object-center w-full h-full rounded-lg"
                                             src={transformacija9}>

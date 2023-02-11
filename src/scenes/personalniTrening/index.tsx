@@ -4,6 +4,8 @@ import kondicioni from "@/assets/kondicioni.mp4"
 import TextModal from "@/shared/TextModal";
 import Gallery from "./Gallery";
 import gym from "@/assets/gym.jpg"
+import transformacije from "@/assets/transformacije.png"
+import GalleryModal from "@/shared/GalleryModal";
 
 
 type Props = {
@@ -33,7 +35,7 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
             PERSONALNI TRENING
           </h1>
         </motion.div>
-        <div className="justify-between md:px-10 gap-10 md:flex mt-10">
+        <div className="justify-between md:px-10 gap-20 md:flex mt-10">
           <div
             className="basis-3/6 mt-10 md:mt-0 relative group"
           >
@@ -65,10 +67,20 @@ const PersonalniTrening = ({ setSelectedPage }: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-10 pb-5">
-          <h2 className="text-2xl text-primary-500">TRANSFORMACIJE</h2>
+        <div className="justify-center md:px-10 gap-10 md:flex mt-10">
+          <div
+            className="basis-3/6 mt-10 md:mt-0 relative group"
+          >
+            <div className="w-full xs:w-[180px] flex justify-center items-center bg-hero2 bg-cover rounded-t-lg text-white">
+              <h2 className="p-2 text-xl">Transformacije</h2>
+            </div>
+            <div className="relative bg-hero2 bg-cover rounded-lg w-full shadow-lg text-white">
+              <div className="absolute -inset-2 bg-hero2 bg-cover rounded-lg blur opacity-10 group-hover:opacity-100 transition duration-500 group-hover:duration-100"></div>
+              <img className="relative rounded-tr-lg z-10 w-full" loading="lazy" src={transformacije}/>
+              <GalleryModal children={<Gallery/>} />
+            </div>
+          </div>
         </div>
-        <Gallery />
       </motion.div>
     </section>
     </div>

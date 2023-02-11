@@ -55,9 +55,9 @@ const Carousel = () => {
       image: gym
     },
     {
-      title: 'Core 45',
+      title: 'Core45',
       name: 'Alen Gluho',
-      description: 'Description 7',
+      description: 'CORE45 je trening koji će vas oduševiti ukoliko tragate za kratkim, oštrim programom koji će vas odvesti ka novom nivou fitnesa, a ujedno ojačati i oblikovati vaše tijelo.Program CORE45 je umjerenog do jakog intenziteta i sagorijeva oko 230 kalorija po treningu. Akcenat stavlja na torzo i mišiće koji povezuju gornji i donji dio tijela.Stoga je idealan za zatezanje mišića “CORE-a”, a takođe podiže snagu na viši nivo i smanjuje mogućnost povreda.',
       video: alenbodyfat,
       image: gym
     },
